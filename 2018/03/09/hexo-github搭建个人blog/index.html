@@ -1,13 +1,85 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
+
+
 
   
-  <title>hexo+github搭建个人blog | Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="&amp;lt;!DOCTYPE html&amp;gt;               var NexT = window.NexT || {};  var CONFIG = {    root: ‘/‘,    scheme: ‘Pisces’,    version: ‘5.1.3’,    sidebar: {“position”:”left”,”display”:”post”,”offset”:12,”b">
+
+
+<html class="theme-next muse use-motion" lang="">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="&amp;lt;!DOCTYPE html&amp;gt;               var NexT = window.NexT || {};  var CONFIG = {    root: ‘/‘,    scheme: ‘Pisces’,    version: ‘5.1.3’,    sidebar: {“position”:”left”,”display”:”post”,”offset”:12,”b">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo+github搭建个人blog">
 <meta property="og:url" content="http://yoursite.com/2018/03/09/hexo-github搭建个人blog/index.html">
@@ -20,73 +92,214 @@
 <meta name="twitter:title" content="hexo+github搭建个人blog">
 <meta name="twitter:description" content="&amp;lt;!DOCTYPE html&amp;gt;               var NexT = window.NexT || {};  var CONFIG = {    root: ‘/‘,    scheme: ‘Pisces’,    version: ‘5.1.3’,    sidebar: {“position”:”left”,”display”:”post”,”offset”:12,”b">
 <meta name="twitter:image" content="https://xnstatic-1253397658.file.myqcloud.com/hexo20.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/03/09/hexo-github搭建个人blog/"/>
+
+
+
+
+
+  <title>hexo+github搭建个人blog | Hexo</title>
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
+
+
+
+
+
+
+
+
 </head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main"><article id="post-hexo-github搭建个人blog" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/03/09/hexo-github搭建个人blog/" class="article-date">
-  <time datetime="2018-03-09T05:45:28.000Z" itemprop="datePublished">2018-03-09</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
+
   
-    <h1 class="article-title" itemprop="name">
-      hexo+github搭建个人blog
-    </h1>
+  
+    
   
 
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/09/hexo-github搭建个人blog/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">hexo+github搭建个人blog</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-09T13:45:28+08:00">
+                2018-03-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
       
         <p>&lt;!DOCTYPE html&gt;</p>
 <html class="theme-next pisces use-motion" lang="zh-Hans"><br><head><br>  <meta charset="UTF-8"><br><meta http-equiv="X-UA-Compatible" content="IE=edge"><br><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><br><meta name="theme-color" content="#222"><br><br><meta http-equiv="Cache-Control" content="no-transform"><br><meta http-equiv="Cache-Control" content="no-siteapp"><br><br>  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"><br><br><link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css"><br><br><link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css"><br><br>  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico?v=5.1.3"><br><br>  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico?v=5.1.3"><br><br>  <meta name="keywords" content="hexo,"><br><br>  <link rel="alternate" href="/atom.xml" title="会飞的污熊" type="application/atom+xml"><br><br><meta name="description" content="最今天我又折腾了我的博客，将它从octopress迁移到hexo上来。之前还专门写了一篇怎样利用octopress搭建博客的文章， 最近试用了一下hexo，毫不犹豫的迁移过来了，实在是忍受不了octopress的速度，还有稳定性，经常莫名其妙的出错。 hexo是一个台湾人做的基于Node.js的静态博客程序，优势是生成静态文件的速度非常快，支持markdown， 我最终选定它的原因是它速度快而且不"><br><meta name="keywords" content="hexo"><br><meta property="og:type" content="article"><br><meta property="og:title" content="使用hexo搭建github博客"><br><meta property="og:url" content="https://www.xncoding.com/2016/03/06/hexo.html"><br><meta property="og:site_name" content="会飞的污熊"><br><meta property="og:description" content="最今天我又折腾了我的博客，将它从octopress迁移到hexo上来。之前还专门写了一篇怎样利用octopress搭建博客的文章， 最近试用了一下hexo，毫不犹豫的迁移过来了，实在是忍受不了octopress的速度，还有稳定性，经常莫名其妙的出错。 hexo是一个台湾人做的基于Node.js的静态博客程序，优势是生成静态文件的速度非常快，支持markdown， 我最终选定它的原因是它速度快而且不"><br><meta property="og:locale" content="zh-Hans"><br><meta property="og:image" content="https://xnstatic-1253397658.file.myqcloud.com/hexo20.png"><br><meta property="og:updated_time" content="2018-01-12T01:58:15.762Z"><br><meta name="twitter:card" content="summary"><br><meta name="twitter:title" content="使用hexo搭建github博客"><br><meta name="twitter:description" content="最今天我又折腾了我的博客，将它从octopress迁移到hexo上来。之前还专门写了一篇怎样利用octopress搭建博客的文章， 最近试用了一下hexo，毫不犹豫的迁移过来了，实在是忍受不了octopress的速度，还有稳定性，经常莫名其妙的出错。 hexo是一个台湾人做的基于Node.js的静态博客程序，优势是生成静态文件的速度非常快，支持markdown， 我最终选定它的原因是它速度快而且不"><br><meta name="twitter:image" content="https://xnstatic-1253397658.file.myqcloud.com/hexo20.png"><br><br><script type="text/javascript" id="hexo.configurations"><br>  var NexT = window.NexT || {};<br>  var CONFIG = {<br>    root: ‘/‘,<br>    scheme: ‘Pisces’,<br>    version: ‘5.1.3’,<br>    sidebar: {“position”:”left”,”display”:”post”,”offset”:12,”b2t”:false,”scrollpercent”:false,”onmobile”:false},<br>    fancybox: true,<br>    tabs: true,<br>    motion: {“enable”:true,”async”:false,”transition”:{“post_block”:”fadeIn”,”post_header”:”slideDownIn”,”post_body”:”slideDownIn”,”coll_header”:”slideLeftIn”,”sidebar”:”slideUpIn”}},<br>    duoshuo: {<br>      userId: ‘0’,<br>      author: ‘博主’<br>    },<br>    algolia: {<br>      applicationID: ‘IQUD4IM8MM’,<br>      apiKey: ‘5b89dec2bf05dd488435bcdb942cf385’,<br>      indexName: ‘blogindex’,<br>      hits: {“per_page”:10},<br>      labels: {“input_placeholder”:”Search for Posts”,”hits_empty”:”Oops, no results for the search: ${query}”,”hits_stats”:”${hits} results found in ${time} ms”}<br>    }<br>  };<br></script><br><br>  <link rel="canonical" href="https://www.xncoding.com/2016/03/06/hexo.html"><br><br>  <title>使用hexo搭建github博客 | 会飞的污熊</title><br><br></head><br><br><body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans"><br><br>  <div class="container sidebar-position-left page-post-detail"><br>    <div class="headband"></div><br><br>    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader"><br>      <div class="header-inner"><div class="site-brand-wrapper"><br>  <div class="site-meta "><br><br>    <div class="custom-logo-site-title"><br>      <a href="/"><br>        <span class="logo-line-before"></span><br>        <span class="site-title">会飞的污熊</span><br>        <span class="logo-line-after"></span>
@@ -119,101 +332,328 @@
 </em>   <a href="http://www.cnblogs.com/" title="博客园" target="_blank" rel="noopener">博客园</a><br>            </div><br><br>        </div><br>      </section><br><br>      <!--noindex--><br>        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active"><br>          <div class="post-toc"><br><br>              <div class="post-toc-content"><br><br>1.  <a href="#安装"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a><br><br>        1.  <a href="#安装依赖软件"><span class="nav-number">1.1.</span> <span class="nav-text">安装依赖软件</span></a><br>    2.  <a href="#换淘宝源"><span class="nav-number">1.2.</span> <span class="nav-text">换淘宝源</span></a><br>    3.  <a href="#安装hexo"><span class="nav-number">1.3.</span> <span class="nav-text">安装hexo</span></a><br>    4.  <a href="#初始化"><span class="nav-number">1.4.</span> <span class="nav-text">初始化</span></a><br>2.  <a href="#发布到github上面"><span class="nav-number">2.</span> <span class="nav-text">发布到github上面</span></a><br><br>        1.  <a href="#创建repository"><span class="nav-number">2.1.</span> <span class="nav-text">创建repository</span></a><br>    2.  <a href="#将本地博客部署上去"><span class="nav-number">2.2.</span> <span class="nav-text">将本地博客部署上去</span></a><br>3.  <a href="#发表一篇文章"><span class="nav-number">3.</span> <span class="nav-text">发表一篇文章</span></a><br>4.  <a href="#hexo主题及其配置"><span class="nav-number">4.</span> <span class="nav-text">hexo主题及其配置</span></a><br><br>        1.  <a href="#安装主题"><span class="nav-number">4.1.</span> <span class="nav-text">安装主题</span></a><br>    2.  <a href="#启用主题"><span class="nav-number">4.2.</span> <span class="nav-text">启用主题</span></a><br>    3.  <a href="#更新主题"><span class="nav-number">4.3.</span> <span class="nav-text">更新主题</span></a><br>    4.  <a href="#主题的-config-yml配置"><span class="nav-number">4.4.</span> <span class="nav-text">主题的_config.yml配置</span></a><br>    5.  <a href="#畅言评论"><span class="nav-number">4.5.</span> <span class="nav-text">畅言评论</span></a><br>5.  <a href="#添加网站的RSS订阅"><span class="nav-number">5.</span> <span class="nav-text">添加网站的RSS订阅</span></a><br><br>        1.  <a href="#安装hexo-generator-feed"><span class="nav-number">5.1.</span> <span class="nav-text">安装hexo-generator-feed</span></a><br>    2.  <a href="#配置根目录的-config-yml"><span class="nav-number">5.2.</span> <span class="nav-text">配置根目录的_config.yml</span></a><br>6.  <a href="#自定义分页"><span class="nav-number">6.</span> <span class="nav-text">自定义分页</span></a><br>7.  <a href="#绑定自己的域名"><span class="nav-number">7.</span> <span class="nav-text">绑定自己的域名</span></a><br>8.  <a href="#站内搜索"><span class="nav-number">8.</span> <span class="nav-text">站内搜索</span></a><br>9.  <a href="#algolia搜索"><span class="nav-number">9.</span> <span class="nav-text">algolia搜索</span></a><br>10.  <a href="#阅读次数统计"><span class="nav-number">10.</span> <span class="nav-text">阅读次数统计</span></a><br>11.  <a href="#多台电脑同时维护博客"><span class="nav-number">11.</span> <span class="nav-text">多台电脑同时维护博客</span></a><br><br>        1.  <a href="#思路"><span class="nav-number">11.1.</span> <span class="nav-text">思路</span></a><br>    2.  <a href="#具体步骤"><span class="nav-number">11.2.</span> <span class="nav-text">具体步骤</span></a><br>    3.  <a href="#使用方法"><span class="nav-number">11.3.</span> <span class="nav-text">使用方法</span></a><br>    4.  <a href="#其他说明"><span class="nav-number">11.4.</span> <span class="nav-text">其他说明</span></a><br>12.  <a href="#FAQ"><span class="nav-number">12.</span> <span class="nav-text">FAQ</span></a><br>13.  <a href="#参考"><span class="nav-number">13.</span> <span class="nav-text">参考</span></a></div><br><br>          </div><br>        </section><br>      <!--/noindex--><br><br>    </div><br>  </aside><br><br>      </div><br>    </main><br><br>    <footer id="footer" class="footer"><br>      <div class="footer-inner"><br>        <div class="copyright">&copy; 2015 - <span itemprop="copyrightYear">2018</span><br>  <span class="with-love"><br><br>  </span><br>  <span class="author" itemprop="copyrightHolder">熊能</span><br><br></div><br><br>  <div class="powered-by">由 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 强力驱动</div><br><br>  <span class="post-meta-divider">|</span><br><br>  <div class="theme-info">粤ICP备17025554号-1</div><br><br>      </div><br>    </footer><br><br>      <div class="back-to-top"><br><br>      </div><br><br>  </div><br><br><script type="text/javascript"><br>  if (Object.prototype.toString.call(window.Promise) !== ‘[object Function]’) {<br>    window.Promise = null;<br>  }<br></script><br><br>  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script><br><br>  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script><br><br>  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script><br><br>  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script><br><br>  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script><br><br>  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script><br><br>  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script><br><br>  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script><br><br>  <script type="text/javascript" src="/js/src/affix.js?v=5.1.3"></script><br><br>  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.3"></script><br><br>  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script><br><script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script><br><br>  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script><br><br>    <script type="text/javascript"><br>    (function(){<br>      var appid = ‘cytmsByHa’;<br>      var conf = ‘4ac23d4624531cd1605c8a00857e76e4’;<br>      var width = window.innerWidth || document.documentElement.clientWidth;<br>      if (width &lt; 960) {<br>      window.document.write(‘<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '">&lt;\/script&gt;’); } else { var loadJs=function(d,a){var c=document.getElementsByTagName(“head”)[0]||document.head||document.documentElement;var b=document.createElement(“script”);b.setAttribute(“type”,”text/javascript”);b.setAttribute(“charset”,”UTF-8”);b.setAttribute(“src”,d);if(typeof a===”function”){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e===”loaded”||e===”complete”){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs(“<a href="https://changyan.sohu.com/upload/changyan.js&quot;,function(){">https://changyan.sohu.com/upload/changyan.js&quot;,function(){</a><br>        window.changyan.api.config({appid:appid,conf:conf})});<br>      }<br>    })();<br>    </script><br>    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script><br><br>  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css"><br><br>  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script><br><br>  <script src="/js/src/algolia-search.js?v=5.1.3"></script><br><br>  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script><br>  <script>AV.initialize(“AXBtbvjnaMP2cE34U1CAjLqF-gzGzoHsz”, “6CKwM1armacelKCp8mh4StM4”);</script><br>  <script><br>    function showTime(Counter) {<br>      var query = new AV.Query(Counter);<br>      var entries = [];<br>      var $visitors = $(“.leancloud_visitors”);<br><br>      $visitors.each(function () {<br>        entries.push( $(this).attr(“id”).trim() );<br>      });<br><br>      query.containedIn(‘url’, entries);<br>      query.find()<br>        .done(function (results) {<br>          var COUNT_CONTAINER_REF = ‘.leancloud-visitors-count’;<br><br>          if (results.length === 0) {<br>            $visitors.find(COUNT_CONTAINER_REF).text(0);<br>            return;<br>          }<br><br>          for (var i = 0; i &lt; results.length; i++) {<br>            var item = results[i];<br>            var url = item.get(‘url’);<br>            var time = item.get(‘time’);<br>            var element = document.getElementById(url);<br><br>            $(element).find(COUNT_CONTAINER_REF).text(time);<br>          }<br>          for(var i = 0; i &lt; entries.length; i++) {<br>            var url = entries[i];<br>            var element = document.getElementById(url);<br>            var countSpan = $(element).find(COUNT_CONTAINER_REF);<br>            if( countSpan.text() == ‘’) {<br>              countSpan.text(0);<br>            }<br>          }<br>        })<br>        .fail(function (object, error) {<br>          console.log(“Error: “ + error.code + “ “ + error.message);<br>        });<br>    }<br><br>    function addCount(Counter) {<br>      var $visitors = $(“.leancloud_visitors”);<br>      var url = $visitors.attr(‘id’).trim();<br>      var title = $visitors.attr(‘data-flag-title’).trim();<br>      var query = new AV.Query(Counter);<br><br>      query.equalTo(“url”, url);<br>      query.find({<br>        success: function(results) {<br>          if (results.length &gt; 0) {<br>            var counter = results[0];<br>            counter.fetchWhenSave(true);<br>            counter.increment(“time”);<br>            counter.save(null, {<br>              success: function(counter) {<br>                var $element = $(document.getElementById(url));<br>                $element.find(‘.leancloud-visitors-count’).text(counter.get(‘time’));<br>              },<br>              error: function(counter, error) {<br>                console.log(‘Failed to save Visitor num, with error message: ‘ + error.message);<br>              }<br>            });<br>          } else {<br>            var newcounter = new Counter();<br>            /<em> Set ACL </em>/<br>            var acl = new AV.ACL();<br>            acl.setPublicReadAccess(true);<br>            acl.setPublicWriteAccess(true);<br>            newcounter.setACL(acl);<br>            /<em> End Set ACL </em>/<br>            newcounter.set(“title”, title);<br>            newcounter.set(“url”, url);<br>            newcounter.set(“time”, 1);<br>            newcounter.save(null, {<br>              success: function(newcounter) {<br>                var $element = $(document.getElementById(url));<br>                $element.find(‘.leancloud-visitors-count’).text(newcounter.get(‘time’));<br>              },<br>              error: function(newcounter, error) {<br>                console.log(‘Failed to create’);<br>              }<br>            });<br>          }<br>        },<br>        error: function(error) {<br>          console.log(‘Error:’ + error.code + “ “ + error.message);<br>        }<br>      });<br>    }<br><br>    $(function() {<br>      var Counter = AV.Object.extend(“Counter”);<br>      if ($(‘.leancloud_visitors’).length == 1) {<br>        addCount(Counter);<br>      } else if ($(‘.post-title-link’).length &gt; 1) {<br>        showTime(Counter);<br>      }<br>    });<br>  </script><br><br></body><br></html>
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/09/hexo-github搭建个人blog/" data-id="cjejjgz8v0001wcub4dezpjqd" class="article-share-link">Partager</a>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/09/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
       
       
     </footer>
   </div>
   
-    
-<nav id="article-nav">
   
   
-    <a href="/2018/03/09/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Ancien</strong>
-      <div class="article-nav-title">Hello World</div>
-    </a>
-  
-</nav>
+  </article>
 
-  
-</article>
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
 
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li></ul>
+    <div class="post-spread">
+      
     </div>
   </div>
 
 
+          </div>
+          
+
+
+          
+
   
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Articles récents</h3>
-    <div class="widget">
-      <ul>
+
+
+
+        </div>
         
-          <li>
-            <a href="/2018/03/09/hexo-github搭建个人blog/">hexo+github搭建个人blog</a>
-          </li>
-        
-          <li>
-            <a href="/2018/03/09/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
     </div>
   </div>
 
-  
-</aside>
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">John Doe</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">Artikel</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
         
       </div>
-      <footer id="footer">
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+
   
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2018 John Doe<br>
-      Propulsé par <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+</div>
+
+
+  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-
-
+    
 
   </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
 </body>
 </html>
