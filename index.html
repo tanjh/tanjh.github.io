@@ -299,35 +299,567 @@
       
         
           
-            <p>&lt;!DOCTYPE html&gt;</p>
-<html class="theme-next pisces use-motion" lang="zh-Hans"><br><head><br>  <meta charset="UTF-8"><br><meta http-equiv="X-UA-Compatible" content="IE=edge"><br><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><br><meta name="theme-color" content="#222"><br><br><meta http-equiv="Cache-Control" content="no-transform"><br><meta http-equiv="Cache-Control" content="no-siteapp"><br><br>  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"><br><br><link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css"><br><br><link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css"><br><br>  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico?v=5.1.3"><br><br>  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico?v=5.1.3"><br><br>  <meta name="keywords" content="hexo,"><br><br>  <link rel="alternate" href="/atom.xml" title="会飞的污熊" type="application/atom+xml"><br><br><meta name="description" content="最今天我又折腾了我的博客，将它从octopress迁移到hexo上来。之前还专门写了一篇怎样利用octopress搭建博客的文章， 最近试用了一下hexo，毫不犹豫的迁移过来了，实在是忍受不了octopress的速度，还有稳定性，经常莫名其妙的出错。 hexo是一个台湾人做的基于Node.js的静态博客程序，优势是生成静态文件的速度非常快，支持markdown， 我最终选定它的原因是它速度快而且不"><br><meta name="keywords" content="hexo"><br><meta property="og:type" content="article"><br><meta property="og:title" content="使用hexo搭建github博客"><br><meta property="og:url" content="https://www.xncoding.com/2016/03/06/hexo.html"><br><meta property="og:site_name" content="会飞的污熊"><br><meta property="og:description" content="最今天我又折腾了我的博客，将它从octopress迁移到hexo上来。之前还专门写了一篇怎样利用octopress搭建博客的文章， 最近试用了一下hexo，毫不犹豫的迁移过来了，实在是忍受不了octopress的速度，还有稳定性，经常莫名其妙的出错。 hexo是一个台湾人做的基于Node.js的静态博客程序，优势是生成静态文件的速度非常快，支持markdown， 我最终选定它的原因是它速度快而且不"><br><meta property="og:locale" content="zh-Hans"><br><meta property="og:image" content="https://xnstatic-1253397658.file.myqcloud.com/hexo20.png"><br><meta property="og:updated_time" content="2018-01-12T01:58:15.762Z"><br><meta name="twitter:card" content="summary"><br><meta name="twitter:title" content="使用hexo搭建github博客"><br><meta name="twitter:description" content="最今天我又折腾了我的博客，将它从octopress迁移到hexo上来。之前还专门写了一篇怎样利用octopress搭建博客的文章， 最近试用了一下hexo，毫不犹豫的迁移过来了，实在是忍受不了octopress的速度，还有稳定性，经常莫名其妙的出错。 hexo是一个台湾人做的基于Node.js的静态博客程序，优势是生成静态文件的速度非常快，支持markdown， 我最终选定它的原因是它速度快而且不"><br><meta name="twitter:image" content="https://xnstatic-1253397658.file.myqcloud.com/hexo20.png"><br><br><script type="text/javascript" id="hexo.configurations"><br>  var NexT = window.NexT || {};<br>  var CONFIG = {<br>    root: ‘/‘,<br>    scheme: ‘Pisces’,<br>    version: ‘5.1.3’,<br>    sidebar: {“position”:”left”,”display”:”post”,”offset”:12,”b2t”:false,”scrollpercent”:false,”onmobile”:false},<br>    fancybox: true,<br>    tabs: true,<br>    motion: {“enable”:true,”async”:false,”transition”:{“post_block”:”fadeIn”,”post_header”:”slideDownIn”,”post_body”:”slideDownIn”,”coll_header”:”slideLeftIn”,”sidebar”:”slideUpIn”}},<br>    duoshuo: {<br>      userId: ‘0’,<br>      author: ‘博主’<br>    },<br>    algolia: {<br>      applicationID: ‘IQUD4IM8MM’,<br>      apiKey: ‘5b89dec2bf05dd488435bcdb942cf385’,<br>      indexName: ‘blogindex’,<br>      hits: {“per_page”:10},<br>      labels: {“input_placeholder”:”Search for Posts”,”hits_empty”:”Oops, no results for the search: ${query}”,”hits_stats”:”${hits} results found in ${time} ms”}<br>    }<br>  };<br></script><br><br>  <link rel="canonical" href="https://www.xncoding.com/2016/03/06/hexo.html"><br><br>  <title>使用hexo搭建github博客 | 会飞的污熊</title><br><br></head><br><br><body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans"><br><br>  <div class="container sidebar-position-left page-post-detail"><br>    <div class="headband"></div><br><br>    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader"><br>      <div class="header-inner"><div class="site-brand-wrapper"><br>  <div class="site-meta "><br><br>    <div class="custom-logo-site-title"><br>      <a href="/"><br>        <span class="logo-line-before"></span><br>        <span class="site-title">会飞的污熊</span><br>        <span class="logo-line-after"></span>
-      </a><br>    </div><br><br>August trip<br><br>  </div><br><br>  <div class="site-nav-toggle"><br>    <button><br>      <span class="btn-bar"></span><br>      <span class="btn-bar"></span><br>      <span class="btn-bar"></span><br>    </button><br>  </div><br></div><br><br><nav class="site-nav"><br><br><em>   <a href="/"><br><br>            首页
-          </a>
-</em>   <a href="/archives/"><br><br>            归档
-          </a><br><em>   <a href="/categories/"><br><br>            分类
-          </a>
-</em>   <a href="/tags/"><br><br>            标签
-          </a><br><em>   <a href="/about/"><br><br>            关于
-          </a>
-</em>   <a href="javascript:;" target="_blank" rel="noopener"><br><br>            搜索
-          </a><br><br>    <div class="site-search"><br><br>  <div class="algolia-popup popup search-popup"><br>    <div class="algolia-search"><br>      <div class="algolia-search-input-icon"><br><br>      </div><br>      <div class="algolia-search-input" id="algolia-search-input"></div><br>    </div><br><br>    <div class="algolia-results"><br>      <div id="algolia-stats"></div><br>      <div id="algolia-hits"></div><br>      <div id="algolia-pagination" class="algolia-pagination"></div><br>    </div><br><br>    <span class="popup-btn-close"><br><br>    </span><br>  </div><br><br>    </div><br><br></nav><br><br> </div><br>    </header><br><br>    <main id="main" class="main"><br>      <div class="main-inner"><br>        <div class="content-wrap"><br>          <div id="content" class="content"><br><br>  <div id="posts" class="posts-expand"><br><br>  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article"><br><br>  <div class="post-block"><br>    <link itemprop="mainEntityOfPage" href="https://www.xncoding.com/2016/03/06/hexo.html"><br><br>    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person"><br>      <meta itemprop="name" content="熊能"><br>      <meta itemprop="description" content=""><br>      <meta itemprop="image" content="/uploads/avatar.png"><br>    </span><br><br>    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization"><br>      <meta itemprop="name" content="会飞的污熊"><br>    </span><br><br>      <header class="post-header"><br><br># 使用hexo搭建github博客<br><br>        <div class="post-meta"><br>          <span class="post-time"><br><br>              <span class="post-meta-item-icon"><br><br>              </span><br><br>                <span class="post-meta-item-text">发表于</span><br><br>              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-03-06T19:47:53+08:00"><br>                2016-03-06<br>              </time><br><br>          </span><br><br>            <span class="post-category"><br><br>              <span class="post-meta-divider">|</span><br><br>              <span class="post-meta-item-icon"><br><br>              </span><br><br>                <span class="post-meta-item-text">分类于</span><br><br>                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><br>                  <a href="/categories/朝花夕拾/"><br>                    <span itemprop="name">朝花夕拾</span>
-                  </a><br>                </span><br><br>            </span><br><br>              <span class="post-comments-count"><br>              <span class="post-meta-divider">|</span><br>              <span class="post-meta-item-icon"><br><br>              </span><br><br>                <a href="/2016/03/06/hexo.html#SOHUCS"><br>                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2016/03/06/hexo.html" itemprop="commentsCount"></span>
-                </a><br><br>             <span id="/2016/03/06/hexo.html" class="leancloud_visitors" data-flag-title="使用hexo搭建github博客"><br>               <span class="post-meta-divider">|</span><br>               <span class="post-meta-item-icon"><br><br>               </span><br><br>                 <span class="post-meta-item-text">阅读次数&#58;</span><br><br>                 <span class="leancloud-visitors-count"></span><br>             </span><br><br>        </span></div><br>      </header><br><br>    <div class="post-body" itemprop="articleBody"><br><br>最今天我又折腾了我的博客，将它从octopress迁移到hexo上来。之前还专门写了一篇怎样利用octopress搭建博客的文章，<br>最近试用了一下hexo，毫不犹豫的迁移过来了，实在是忍受不了octopress的速度，还有稳定性，经常莫名其妙的出错。<br><br>hexo是一个台湾人做的基于Node.js的静态博客程序，优势是生成静态文件的速度非常快，支持markdown，<br>我最终选定它的原因是它速度快而且不容易出错，并且可以一键部署到github或者其它静态服务器上去。折腾了一天总算搞定。<a id="more"></a><br><br>## <a href="#安装" title="安装"></a>安装<br><br>我这个教程hexo3版本，本地使用Windows7系统，在IDEA上面写Markdown的博客，爽歪歪。<br><br>### <a href="#安装依赖软件" title="安装依赖软件"></a>安装依赖软件<br><br><a href="https://nodejs.org/en" target="_blank" rel="noopener">Node.js</a>: node.js用来创建hexo博客框架的<br><br>如果是windows系统，可以直接下载安装文件安装。如果是linux系统，可以使用下面的命令行：<br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">wget <a href="https://nodejs.org/dist/v6.10.0/node-v6.10.0.tar.gz" target="_blank" rel="noopener">https://nodejs.org/dist/v6.10.0/node-v6.10.0.tar.gz</a></span><br><span class="line">tar xzvf node-v<em> &amp;&amp; cd node-v</em></span><br><span class="line">yum install gcc gcc-c++</span><br><span class="line">./configure –prefix=/usr/local/nodejs</span><br><span class="line">make &amp;&amp; make install  #这步时间很久20分钟</span><br><span class="line">node –version  # 如果命令找不到就将/usr/local/nodejs/bin加入PATH中</span><br></pre></td></tr></table></figure><br><br>最新的node.js已经集成了npm，不过需要经常更新：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install npm@latest -g</span><br><span class="line">npm –version</span><br></pre></td></tr></table></figure><br><br>### <a href="#换淘宝源" title="换淘宝源"></a>换淘宝源<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a></span><br></pre></td></tr></table></figure><br><br>之后使用cnpm命令代替npm命令，或者你直接通过添加 npm 参数 alias 一个新命令:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">alias cnpm=&quot;npm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a> \</span><br><span class="line">–cache=$HOME/.npm/.cache/cnpm \</span><br><span class="line">–disturl=<a href="https://npm.taobao.org/dist" target="_blank" rel="noopener">https://npm.taobao.org/dist</a> \</span><br><span class="line">–userconfig=$HOME/.cnpmrc&quot;</span><br></pre></td></tr></table></figure><br><br><a href="http://git-scm.com/download/win" target="_blank" rel="noopener">Git客户端</a>: 把本地的hexo内容提交到github上去<br><br>### <a href="#安装hexo" title="安装hexo"></a>安装hexo<br><br>利用 npm 命令即可安装。打开窗口控制台，输入安装hexo命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo</span><br></pre></td></tr></table></figure><br><br>### <a href="#初始化" title="初始化"></a>初始化<br><br>安装完成后，在你喜爱的文件夹下（如D:\hexo），控制台执行以下指令，hexo会自动在目标文件夹建立网站所需要的所有文件。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure><br><br>安装依赖包：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install</span><br></pre></td></tr></table></figure><br><br>一切准备就绪让我们试验下，在D:\hexo内执行以下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure><br><br>然后用浏览器访问<a href="http://localhost:4000，" target="_blank" rel="noopener">http://localhost:4000，</a> 此时，你应该看到了一个漂亮的博客了，当然这个博客只是在本地的，别人是看不到的，hexo3.0使用的默认主题是landscape。<br><br>## <a href="#发布到github上面" title="发布到github上面"></a>发布到github上面<br><br>首先你得有github账号，如果没有就去注册个，很简单的步骤。<br><br>### <a href="#创建repository" title="创建repository"></a>创建repository<br><br>repository相当于一个仓库，用来放置你的代码文件。登陆进入Github，并进入个人页面，选择repositories，然后New一个repository。<br>创建时，只需要填写Repository name即可。格式必须为yourname.github.io，比如我的是yidao620c.github.io<br><br>### <a href="#将本地博客部署上去" title="将本地博客部署上去"></a>将本地博客部署上去<br><br>先修改D:\hexo下的_config.yml文件,记得一点，hexo的配置文件中任何’:’后面都是带一个空格的<br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repository: <a href="https://github.com/yidao620c/yidao620c.github.io.git" target="_blank" rel="noopener">https://github.com/yidao620c/yidao620c.github.io.git</a></span><br><span class="line">    branch: master</span><br></pre></td></tr></table></figure><br><br>我刚开始是部署到github上面，现在我部署到自己的腾讯云主机上面去了，<br>原理都一样，在腾讯云主机上面创建一个git服务即可。然后上面的<code>repository</code>改成自己的git服务器地址。<br><br>如果你是第一次使用Github或者是已经使用过，但没有配置过SSH，则可能需要配置一下SSH。<br>在Git Bash输入以下指令（任意位置点击鼠标右键），检查是否已经存在了SSH keys。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -al ~/.ssh</span><br></pre></td></tr></table></figure><br><br>如果不存在就没有关系，如果存在的话，直接删除.ssh文件夹里面所有文件<br><br>输入以下指令（邮箱就是你注册Github时候的邮箱）后回车，出现提示让你输入的时候一直按回车：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">“<a href="mailto:yidao620@gmail.com" target="_blank" rel="noopener">yidao620@gmail.com</a>“</span></span><br></pre></td></tr></table></figure><br><br>然后键入以下指令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">eval</span> <code>ssh-agent -s</code></span><br><span class="line">ssh-add</span><br></pre></td></tr></table></figure><br><br>到了这一步，就可以添加SSH key到你的Github账户了。键入以下指令，拷贝Key（先拷贝了，等一下可以直接粘贴，不放心的在执行下面命令后，先黏贴在记事本上）：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">clip &lt; ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure><br><br>然后到Github里面，点击右上角的设置图标Settings,找到SSH keys,Ttile随便你命名，Key就黏贴上你刚才复制的key,然后点Add SSH key，最后会让你重新输入下gitHub的密码<br>最后还是测试一下吧，键入以下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a></span><br></pre></td></tr></table></figure><br><br>你可能会看到有警告，输入“yes”就好<br><br>还要安装hexo-deployer-git这个模块:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git –save</span><br></pre></td></tr></table></figure><br><br>以上就表示SSH配置好了，执行以下命令部署到Github上。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure><br><br>提示输入gitHub的账号密码，就能访问你得博客网站了。我的是: yidao620c.github.io<br><br>## <a href="#发表一篇文章" title="发表一篇文章"></a>发表一篇文章<br><br>在你的D:\hexo目录下面，控制台执行命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">“Hello World”</span></span><br></pre></td></tr></table></figure><br><br>会自动在D:\hexo\source_posts文件夹生成一个hello-world.md文件，用编辑器打开，在里面写文章。<br>记住hexo中写文章使用的是Markdown语法，自己去google下这个语法吧，很方便很强大。里面的初始内容<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">title: Hello World #可以改成中文的，如“新文章”</span><br><span class="line">date: 2016-03-06 16:04:09 #发表日期，一般不改动</span><br><span class="line">categories: blog #文章文类</span><br><span class="line">tags: [文章, 测试] #文章标签，多于一项时用这种格式，只有一项时使用tags: blog</span><br><span class="line">—</span><br><span class="line">#这里是正文，用markdown写，你可以选择写一段显示在首页的简介后，加上</span><br><span class="line">&lt;!–more–&gt;，在&lt;!–more–&gt;之前的内容会显示在首页，之后的内容会被隐藏，当游客点击Read more才能看到。</span><br></pre></td></tr></table></figure><br><br>写完文章后，你可以使用<code>hexo g</code>生成静态文件。<code>hexo s</code>在本地预览效果。<code>hexo d</code>同步到github<br><br>## <a href="#hexo主题及其配置" title="hexo主题及其配置"></a>hexo主题及其配置<br><br>如果你不喜欢默认主题，那么可以去hexo官网找更多的<a href="https://hexo.io/themes/" target="_blank" rel="noopener">主题</a>。<br>我这里选择NexT主题说明一下，这个是一个非常简洁的主题，我喜欢简单的东西。<br><br>Next主题官网：<a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">http://theme-next.iissnan.com/</a><br><br>### <a href="#安装主题" title="安装主题"></a>安装主题<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> your-hexo-site</span><br><span class="line">$ git <span class="built_in">clone</span> <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">https://github.com/iissnan/hexo-theme-next</a> themes/next</span><br></pre></td></tr></table></figure><br><br>### <a href="#启用主题" title="启用主题"></a>启用主题<br><br>修改你的博客根目录下的config.yml配置文件中的theme属性，将其设置为next<br><br>### <a href="#更新主题" title="更新主题"></a>更新主题<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> themes/next</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure><br><br>更新好后，本地启动起来效果<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server -g  <span class="comment">#生成加预览</span></span><br></pre></td></tr></table></figure><br><br>### <a href="#主题的-config-yml配置" title="主题的_config.yml配置"></a>主题的_config.yml配置<br><br>具体配置请直接参考<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">开始使用NexT主题</a>。<br>同时我对这个主题进行了很多的修改让它看上去更加符合自己的审美观，如果对我博客的主题感兴趣可以直接在我的github页面拉取即可。<br><br>### <a href="#畅言评论" title="畅言评论"></a>畅言评论<br><br>一开始我用了多说，后来多说关闭不能使用了。然后换到disqus，发现还是有不少问题，首先是https因为不少认证过的，在浏览器里面有警告。<br>另外匿名评论我在管理后台看不到，不知道什么原因。最后还是切换至国内的畅言评论。<br><br>参考这篇 <a href="http://www.jianshu.com/p/5888bd91d070" target="_blank" rel="noopener">http://www.jianshu.com/p/5888bd91d070</a><br><br>先申请畅言，并且通过审核。获取到畅言评论的<code>APP ID</code> 和<code>APP KEY</code>，复制下来。<br><br>主题配置文件<code>_config.yml</code>中添加一个简单的配置即可：<br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># changyan</span><br><span class="line">changyan:</span><br><span class="line">  enable: true</span><br><span class="line">  appid: your_appid</span><br><span class="line">  appkey: your_appkey</span><br></pre></td></tr></table></figure><br><br>安装畅言后遇到几个问题，打开页面控制台后一直报错误，页面循环计数，另外有评论的文章，在首页评论数永远是0，在文章里面计数正常，<br>虽然不影响使用，但是看着真是不舒服。必须解决，参考了一篇文章（后面贴了链接）解决方案。<br><br>找到<code>next/layout/_third-party/comments/changyan.swig:1~4行</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% if theme.changyan.enable and theme.changyan.appid and theme.changyan.appkey %&#125;</span><br><span class="line">  &#123;% if is_home() %&#125;</span><br><span class="line">    &lt;script id=&quot;cy_cmt_num&quot; src=&quot;<a href="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=&#123;&#123;theme.changyan.appid&#125;&#125;&quot;&gt;&lt;/script" target="_blank" rel="noopener">https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=&#123;&#123;theme.changyan.appid&#125;&#125;&quot;&gt;&lt;/script</a>&gt;</span><br><span class="line">  &#123;% else %&#125;</span><br><span class="line">    …省略</span><br></pre></td></tr></table></figure><br><br>只需要将<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% else %&#125;</span><br></pre></td></tr></table></figure><br><br>改成<br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% elseif page.comments %&#125;</span><br></pre></td></tr></table></figure><br><br>然后再找到<code>next/layout/_mavro/post.swig:175～178行</code><br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;&#123;&#123; url_for(post.path) &#125;&#125;#SOHUCS&quot; itemprop=&quot;discussionUrl&quot;&gt;</span><br><span class="line">                 &lt;span id=&quot;url::&#123;&#123; post.permalink &#125;&#125;&quot; class=&quot;cy_cmt_count&quot; data-xid=&quot;&#123;&#123; post.path &#125;&#125;&quot; itemprop=&quot;commentsCount&quot; &gt;&lt;/span&gt;</span><br><span class="line">               &lt;/a&gt;</span><br></pre></td></tr></table></figure><br><br>只需要将<code>post.permalink</code>这个值包一层encodeURI方法，如下修改：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;span id=&quot;url::&#123;&#123; encodeURI(post.permalink) &#125;&#125;&quot; class=&quot;cy_cmt_count&quot; data-xid=&quot;&#123;&#123; post.path &#125;&#125;&quot; itemprop=&quot;commentsCount&quot; &gt;&lt;/span&gt;</span><br></pre></td></tr></table></figure><br><br>另外如果部署在自己服务器上面的话，你可以在带www的文章下评论完，然后去不带www的文章下看看，评论已经不存在，我做了nginx 301重定向解决。<br><br>## <a href="#添加网站的RSS订阅" title="添加网站的RSS订阅"></a>添加网站的RSS订阅<br><br>### <a href="#安装hexo-generator-feed" title="安装hexo-generator-feed"></a>安装hexo-generator-feed<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install hexo-generator-feed –save</span><br></pre></td></tr></table></figure><br><br>安装完后，会在node_modules目录下生成hexo-generator-feed目录<br><br>### <a href="#配置根目录的-config-yml" title="配置根目录的_config.yml"></a>配置根目录的_config.yml<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: <a href="http://hexo.io/plugins/" target="_blank" rel="noopener">http://hexo.io/plugins/</a></span><br><span class="line">#RSS订阅</span><br><span class="line">plugin:</span><br><span class="line">- hexo-generator-feed</span><br><span class="line">#Feed Atom</span><br><span class="line">feed:</span><br><span class="line">  type: atom</span><br><span class="line">  path: atom.xml</span><br><span class="line">  limit: 20</span><br><span class="line">  hub:</span><br></pre></td></tr></table></figure><br><br>其中，feed是可选项，可配可不配！然后根据各个主题的说明添加一个RSS订阅链接即可<br><br>## <a href="#自定义分页" title="自定义分页"></a>自定义分页<br><br>安装三个插件：归档，标签，分类。然后将每个分页显示文章数都变大点<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-archive –save</span><br><span class="line">npm install hexo-generator-tag –save</span><br><span class="line">npm install hexo-generator-category –save</span><br></pre></td></tr></table></figure><br><br>三者各自的配置：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">archive_generator:</span><br><span class="line">  per_page: 100</span><br><span class="line">  yearly: true</span><br><span class="line">  monthly: true</span><br><span class="line">  daily: false</span><br><span class="line">tag_generator:</span><br><span class="line">  per_page: 100</span><br><span class="line">category_generator:</span><br><span class="line">  per_page: 100</span><br></pre></td></tr></table></figure><br><br>## <a href="#绑定自己的域名" title="绑定自己的域名"></a>绑定自己的域名<br><br>Github Page绑定自己域名，在source/目录下面新建<code>CNAME</code>文件，里面写入你自己的域名比如<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><a href="http://www.pycoding.com" target="_blank" rel="noopener">www.pycoding.com</a></span><br></pre></td></tr></table></figure><br><br>去自己的域名运营商处添加CNAME类型的DNS记录:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">CNAME: @        =&gt;  yidao620c.github.io</span><br><span class="line">CNAME: www      =&gt;  yidao620c.github.io</span><br></pre></td></tr></table></figure><br><br>如果是DNSPod，那么后面多加个点<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">@，CNAME，cmback.github.io.</span><br><span class="line">www，CNAME，cmback.github.io.</span><br></pre></td></tr></table></figure><br><br>## <a href="#站内搜索" title="站内搜索"></a>站内搜索<br><br>最简单是直接开启<code>Local Search</code><br><br>安装 <code>hexo-generator-searchdb</code>，在站点的根目录下执行以下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install hexo-generator-searchdb –save</span><br></pre></td></tr></table></figure><br><br>全局配置文件_config.yml中定义搜索页面：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br></pre></td></tr></table></figure><br><br>在NexT的_config.yml配置中开启这个本地搜索：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># Local search</span><br><span class="line">local_search:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure><br><br>## <a href="#algolia搜索" title="algolia搜索"></a>algolia搜索<br><br>使用一段时间的<code>Local Search</code>后发现还是不太好用，后来比较了一下Swiftype、 微搜索、Local Search 和 Algolia，<br>发现<code>algolia</code>比较好。安装<code>NexT</code>文档配置步骤如下：<br><br>第一步，先注册Algolia，创建Index<br><br>前往 <a href="https://www.algolia.com/" target="_blank" rel="noopener">Algolia 注册页面</a>，注册一个新账户。可以使用 GitHub 或者 Google 账户直接登录，<br>注册后的 14 天内拥有所有功能（包括收费类别的）。之后若未续费会自动降级为免费账户，免费账户总共有 10,000 条记录，<br>每月有 100,000 的可以操作数。注册完成后，创建一个新的 Index，这个 Index 将在后面使用。<br><br>第二步，安装Algolia<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install –save hexo-algolia</span><br></pre></td></tr></table></figure><br><br>第三步，获取Key，更新站点配置<br><br>在 Algolia 服务站点上找到需要使用的一些配置的值，包括 <code>ApplicationID</code>、<code>Search-Only API Key</code>、<code>min API Key</code>。<br>注意，Admin API Key 需要保密保存。点击ALL API KEYS 找到新建INDEX对应的key， 编辑权限，<br>在弹出框中找到ACL选择勾选<code>Search</code>、<code>Add records</code>、<code>Delete records</code>、<code>List indices</code>、<code>Delete index</code>权限，点击update更新。<br><br><img src="https://xnstatic-1253397658.file.myqcloud.com/hexo20.png" alt=""><br><br>编辑站点配置文件，新增以下配置：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">algolia:</span><br><span class="line">  applicationID: &apos;IQUD4IM8MM&apos;</span><br><span class="line">  indexName: &apos;blogindex&apos;</span><br><span class="line">  chunkSize: 5000</span><br></pre></td></tr></table></figure><br><br>替换除了 chunkSize 以外的其他字段为在 Algolia 获取到的值。<br><br>第四步，更新Index<br><br>当配置完成，新增一个环境变量，windwos和linux配置环境变量我就不讲了。<br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">HEXO_ALGOLIA_INDEXING_KEY=Search-Only API key</span><br></pre></td></tr></table></figure><br><br>在站点根目录下执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo algolia</span><br></pre></td></tr></table></figure><br><br>来更新 Index，请注意观察命令的输出。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ hexo algolia</span><br><span class="line">INFO  [Algolia] Testing HEXO_ALGOLIA_INDEXING_KEY permissions.</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  [Algolia] Identified 152 pages and posts to index.</span><br><span class="line">INFO  [Algolia] Indexing chunk 1 of 4 (50 items each)</span><br><span class="line">INFO  [Algolia] Indexing chunk 2 of 4 (50 items each)</span><br><span class="line">INFO  [Algolia] Indexing chunk 3 of 4 (50 items each)</span><br><span class="line">INFO  [Algolia] Indexing chunk 4 of 4 (50 items each)</span><br><span class="line">INFO  [Algolia] Indexing done.</span><br></pre></td></tr></table></figure><br><br>注意，每次更新文章后记得执行<code>hexo algolia</code>更新索引哦。<br><br>第五步，主题集成<br><br>更改主题配置文件，找到 Algolia Search 配置部分：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># Algolia Search</span><br><span class="line">algolia_search:</span><br><span class="line">  enable: false</span><br><span class="line">  hits:</span><br><span class="line">    per_page: 10</span><br><span class="line">  labels:</span><br><span class="line">    input_placeholder: Search for Posts</span><br><span class="line">    hits_empty: &quot;We didn&apos;t find any results for the search: $&#123;query&#125;&quot;</span><br><span class="line">    hits_stats: &quot;$&#123;hits&#125; results found in $&#123;time&#125; ms&quot;</span><br></pre></td></tr></table></figure><br><br>将 <code>enable</code> 改为 <code>true</code> 即可，根据需要你可以调整 <code>labels</code> 中的文本。<br><br>## <a href="#阅读次数统计" title="阅读次数统计"></a>阅读次数统计<br><br>使用LeanCloud为文章添加阅读次数统计，请参考文章<a href="https://notes.wanghao.work/2015-10-21-%E4%B8%BANexT%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E9%98%85%E8%AF%BB%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%8A%9F%E8%83%BD.html#%E9%85%8D%E7%BD%AELeanCloud" target="_blank" rel="noopener">为NexT主题添加文章阅读量统计功能</a><br><br>## <a href="#多台电脑同时维护博客" title="多台电脑同时维护博客"></a>多台电脑同时维护博客<br><br>之前利用了 Hexo + Github搭建了自己的博客网站，但问题来了：如何在多台电脑上对此博客进行维护？<br><br>### <a href="#思路" title="思路"></a>思路<br><br><em>   对于一个已创建的博客目录，其已通过hexo建立了public目录下的内容与远程仓库<a href="mailto:yidao620c@github.com" target="_blank" rel="noopener">yidao620c@github.com</a>的master分支的连接关系，通过hexo的hexo deploy命令即可保持更新；
-</em>   因此只需要在此仓库<a href="mailto:yidao620c@github.com" target="_blank" rel="noopener">yidao620c@github.com</a>上再创建一个分支如source，将其与hexo下其他文件如node_modules、themes、scaffolds等（即除了public目录及.gitignore包含的文件外）进行同步绑定。<br><em>   在不同的电脑下设置好hexo环境，通过hexo命令维护master分支，通过git命令维护source分支即可。<br><br>### <a href="#具体步骤" title="具体步骤"></a>具体步骤<br><br>（假定最初创建博客为A，其他另一个为B)<br><br>1) 在A中的git_blog目录下，建立source分支：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ git branch <span class="built_in">source</span> // 创建<span class="built_in">source</span>分支</span><br><span class="line">$ git checkout <span class="built_in">source</span> // 切换到<span class="built_in">source</span>分支</span><br><span class="line">$ git remote -v //查看远程分支名字</span><br><span class="line"> // 我的内容为如下，说明已绑定</span><br><span class="line"> // origin  <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:yidao620c/yidao620c.github.com.git (fetch)</span><br><span class="line"> // origin    <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:yidao620c/yidao620c.github.com.git (push)</span><br><span class="line">修改.gitignore文件，添加<span class="string">“public/“</span>字段至其中。</span><br><span class="line">$ git push origin <span class="built_in">source</span> // 将当前git_blog下的内容push到Github上的远程仓库的<span class="built_in">source</span>分支（会自动创建）上</span><br></pre></td></tr></table></figure><br><br>2) 在B中建立git_blog目录，安装npm，安装Hexo，添加SSH，然后在B中建立本地的source分支，并与远程的source分支进行了绑定。<br>git_blog下的yidao620c.github.com文件夹里保存了和远程source分支相同的内容。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> -b <span class="built_in">source</span> <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:yidao620c/yidao620c.github.com.git</span><br><span class="line">$ <span class="built_in">cd</span> yidao620c.github.com</span><br><span class="line">$ git branch -a</span><br><span class="line">$ git checkout -b <span class="built_in">source</span> origin/<span class="built_in">source</span></span><br><span class="line">$ cnpm install hexo</span><br><span class="line">$ cnpm install</span><br><span class="line">$ cnpm install hexo-deployer-git –save</span><br><span class="line">$ cnpm install hexo-renderer-jade –save</span><br><span class="line">$ cnpm install hexo-renderer-sass –save</span><br></pre></td></tr></table></figure><br><br><strong>重要记录</strong><br><br>千万别执行<code>hexo init</code>这个命令啊，同时<code>Next</code>主题的安装步骤还是需要的。<br><br>另外hexo3.4.3版本好像生成toc的时候有点问题，我退回到3.3.9就正常。<br><br>首先<code>package.json</code>改成绝对版本号：<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">“name”</span>: <span class="string">“hexo-site”</span>,</span><br><span class="line">  <span class="attr">“version”</span>: <span class="string">“0.0.0”</span>,</span><br><span class="line">  <span class="attr">“private”</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">“hexo”</span>: &#123;</span><br><span class="line">    <span class="attr">“version”</span>: <span class="string">“3.3.9”</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">“dependencies”</span>: &#123;</span><br><span class="line">    <span class="attr">“hexo”</span>: <span class="string">“3.3.9”</span>,</span><br><span class="line">    <span class="attr">“hexo-algolia”</span>: <span class="string">“^1.2.3”</span>,</span><br><span class="line">    <span class="attr">“hexo-deployer-git”</span>: <span class="string">“^0.3.1”</span>,</span><br><span class="line">    <span class="attr">“hexo-generator-archive”</span>: <span class="string">“^0.1.5”</span>,</span><br><span class="line">    <span class="attr">“hexo-generator-category”</span>: <span class="string">“^0.1.3”</span>,</span><br><span class="line">    <span class="attr">“hexo-generator-feed”</span>: <span class="string">“^1.2.2”</span>,</span><br><span class="line">    <span class="attr">“hexo-generator-index”</span>: <span class="string">“^0.2.0”</span>,</span><br><span class="line">    <span class="attr">“hexo-generator-searchdb”</span>: <span class="string">“^1.0.8”</span>,</span><br><span class="line">    <span class="attr">“hexo-generator-tag”</span>: <span class="string">“^0.2.0”</span>,</span><br><span class="line">    <span class="attr">“hexo-renderer-ejs”</span>: <span class="string">“^0.3.0”</span>,</span><br><span class="line">    <span class="attr">“hexo-renderer-jade”</span>: <span class="string">“^0.4.1”</span>,</span><br><span class="line">    <span class="attr">“hexo-renderer-marked”</span>: <span class="string">“^0.3.0”</span>,</span><br><span class="line">    <span class="attr">“hexo-renderer-sass”</span>: <span class="string">“^0.3.2”</span>,</span><br><span class="line">    <span class="attr">“hexo-renderer-stylus”</span>: <span class="string">“^0.3.1”</span>,</span><br><span class="line">    <span class="attr">“hexo-server”</span>: <span class="string">“^0.2.0”</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br><br>然后把hexo卸载了，重新安装指定版本，在另外一个目录执行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cnpm uninstall hexo -g</span><br><span class="line">cnpm install <a href="mailto:hexo@3.3.9" target="_blank" rel="noopener">hexo@3.3.9</a> -g</span><br></pre></td></tr></table></figure><br><br>然后再回到hexo目录执行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install</span><br></pre></td></tr></table></figure><br><br>### <a href="#使用方法" title="使用方法"></a>使用方法<br><br>如果是新电脑，先把source分支clone下来：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> -b <span class="built_in">source</span> –single-branch <a href="https://github.com/yidao620c/yidao620c.github.io.git" target="_blank" rel="noopener">https://github.com/yidao620c/yidao620c.github.io.git</a></span><br></pre></td></tr></table></figure><br><br>在任意一台mac操作，都需先切换并保持在source分支上。使用git命令管理source文件；使用hexo命令进行同步至远程master分支，无需处理本地master分支<br><br>1.  在A中使用Hexo的new、g、d方法添加、生成、部署新的博客，内容都会被同步自动放到Github的master分支上<br>2.  在A中使用git命令的<code>push origin source</code>同步source到远程source分支<br>3.  同样保证B的git当前在git_blog下的source分支下<br><br>先使用：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull origin <span class="built_in">source</span></span><br></pre></td></tr></table></figure><br><br>获得Github的source分支上的最新版本，再使用：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git add -u</span><br><span class="line">$ git commit -m <span class="string">“”</span></span><br><span class="line">$ git push origin <span class="built_in">source</span></span><br></pre></td></tr></table></figure><br><br>将新内容提交至Github的source分支上，完成source管理。<br><br>### <a href="#其他说明" title="其他说明"></a>其他说明<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add -f xxx // 强制添加文件/文件夹为tracked状态</span><br><span class="line">git rm –cache xxx // 解除文件为tracked状态</span><br><span class="line">git rm -r –cache xxx // 解除文件夹为tracked状态</span><br></pre></td></tr></table></figure><br><br>## <a href="#FAQ" title="FAQ"></a>FAQ
+            <p>hexo是一个台湾人做的基于Node.js的静态博客程序，优势是生成静态文件的速度非常快，支持markdown， 我最终选定它的原因是它速度快而且不容易出错，并且可以一键部署到github或者其它静态服务器上去。</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a><a href="#安装" title="安装"></a>安装</h2><p>我这个教程hexo3版本，本地使用Windows10系统，在IDEA上面写Markdown的博客，爽歪歪。</p>
+<h3 id="安装依赖软件"><a href="#安装依赖软件" class="headerlink" title="安装依赖软件"></a><a href="#安装依赖软件" title="安装依赖软件"></a>安装依赖软件</h3><p><a href="https://nodejs.org/en" target="_blank" rel="noopener">Node.js</a>: node.js用来创建hexo博客框架的</p>
+<p>如果是windows系统，可以直接下载安装文件安装。如果是linux系统，可以使用下面的命令行：</p>
+<p>wget <a href="https://nodejs.org/dist/v6.10.0/node-v6.10.0.tar.gz" target="_blank" rel="noopener">https://nodejs.org/dist/v6.10.0/node-v6.10.0.tar.gz</a><br>tar xzvf node-v<br>cd node-v<br>yum install gcc gcc-c++<br>./configure –prefix=/usr/local/nodejs<br>make<br>make install  #这步时间很久20分钟<br>node –version  # 如果命令找不到就将/usr/local/nodejs/bin加入PATH中</p>
+<p>最新的node.js已经集成了npm，不过需要经常更新：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install npm@latest -g</span><br><span class="line">npm –version</span><br></pre></td></tr></table></figure>
 
-</em>   遇到有大括号的代码块，如果多行的不用管，如果单行的就单个反引号，并且在里面加raw标签，比如 <code></code><em>   关闭hexo的将回车当换行做法是用正常的markdown两个回车当换行，在全局_config.yml中添加配置<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">marked:</span><br><span class="line">  gfm: true</span><br><span class="line">  breaks: false</span><br></pre></td></tr></table></figure><br><br>## <a href="#参考" title="参考"></a>参考
+<h3 id="换淘宝源"><a href="#换淘宝源" class="headerlink" title="换淘宝源"></a><a href="#换淘宝源" title="换淘宝源"></a>换淘宝源</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a></span><br></pre></td></tr></table></figure>
 
-</em>   <a href="http://tengj.top/tags/hexo/" target="_blank" rel="noopener">hexo干货系列</a><br><em>   <a href="https://www.haomwei.com/technology/maupassant-hexo.html" target="_blank" rel="noopener">大道至简——Hexo简洁主题推荐</a>
-</em>   <a href="http://www.chaixuhong.com/article/NEXT%E4%BD%BF%E7%94%A8%E7%95%85%E8%A8%80%E7%9A%84%E9%97%AE%E9%A2%98.html" target="_blank" rel="noopener">NEXT主题中使用畅言的坑</a><br><br>    </div><br><br>    <footer class="post-footer"><br><br>        <div class="post-tags"><br><br>            <a href="/tags/hexo/"># hexo</a><br><br>        </div><br><br>        <div class="post-nav"><br>          <div class="post-nav-next post-nav-item"><br><br>              <a href="/2016/01/02/python/gevent.html" title="浅谈coroutine和gevent"><br>                 浅谈coroutine和gevent
-              </a><br><br>          </div><br><br>          <span class="post-nav-divider"></span><br><br>          <div class="post-nav-prev post-nav-item"><br><br>              <a href="/2016/03/07/python/sqlalchemy01.html" title="SQLAlchemy入门"><br>                SQLAlchemy入门 
-              </a><br><br>          </div><br>        </div><br><br>    </footer><br>  </div><br><br>  </article><br><br>    <div class="post-spread"><br><br>    </div><br>  </div><br><br>          </div><br><br>    <div class="comments" id="comments"><br>      <div id="SOHUCS"></div><br>    </div><br><br>        </div><br><br>  <div class="sidebar-toggle"><br>    <div class="sidebar-toggle-line-wrap"><br>      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span><br>      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span><br>      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span><br>    </div><br>  </div><br><br>  <aside id="sidebar" class="sidebar"><br><br>    <div class="sidebar-inner"><br><br><em>   文章目录
-</em>   站点概览<br><br>      <section class="site-overview-wrap sidebar-panel"><br>        <div class="site-overview"><br>          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person"><br><br>              <img src="/uploads/avatar.png" alt="熊能"><br><br>熊能<br><br>这里要写啥我不是很清楚 →_→<br><br>          </div><br><br>          <nav class="site-state motion-element"><br><br>              <div class="site-state-item site-state-posts"><br><br>                <a href="/archives/"><br><br>                  <span class="site-state-item-count">180</span><br>                  <span class="site-state-item-name">日志</span>
-                </a><br>              </div><br><br>              <div class="site-state-item site-state-categories"><br>                <a href="/categories/index.html"><br>                  <span class="site-state-item-count">17</span><br>                  <span class="site-state-item-name">分类</span>
-                </a><br>              </div><br><br>              <div class="site-state-item site-state-tags"><br>                <a href="/tags/index.html"><br>                  <span class="site-state-item-count">87</span><br>                  <span class="site-state-item-name">标签</span>
-                </a><br>              </div><br><br>          </nav><br><br>            <div class="feed-link motion-element"><br>              <a href="/atom.xml"><br><br>                RSS
-              </a><br>            </div><br><br>          <div class="links-of-author motion-element"><br><br>                <span class="links-of-author-item"><br>                  <a href="https://github.com/yidao620c" title="GitHub" target="_blank" rel="noopener"><br><br>                      GitHub</a><br>                </span><br><br>                <span class="links-of-author-item"><br>                  <a href="http://weibo.com/yidao620" title="微博" target="_blank" rel="noopener"><br><br>                      微博</a><br>                </span><br><br>          </div><br><br>            <div class="links-of-blogroll motion-element links-of-blogroll-inline"><br>              <div class="links-of-blogroll-title"><br><br>                Links<br>              </div><br><br><em>   <a href="https://coolshell.cn/" title="酷壳" target="_blank" rel="noopener">酷壳</a>
-</em>   <a href="http://www.infoq.com/cn/" title="InfoQ" target="_blank" rel="noopener">InfoQ</a><br><em>   <a href="http://blog.jobbole.com/" title="伯乐在线" target="_blank" rel="noopener">伯乐在线</a>
-</em>   <a href="http://www.cnblogs.com/" title="博客园" target="_blank" rel="noopener">博客园</a><br>            </div><br><br>        </div><br>      </section><br><br>      <!--noindex--><br>        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active"><br>          <div class="post-toc"><br><br>              <div class="post-toc-content"><br><br>1.  <a href="#安装"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a><br><br>        1.  <a href="#安装依赖软件"><span class="nav-number">1.1.</span> <span class="nav-text">安装依赖软件</span></a><br>    2.  <a href="#换淘宝源"><span class="nav-number">1.2.</span> <span class="nav-text">换淘宝源</span></a><br>    3.  <a href="#安装hexo"><span class="nav-number">1.3.</span> <span class="nav-text">安装hexo</span></a><br>    4.  <a href="#初始化"><span class="nav-number">1.4.</span> <span class="nav-text">初始化</span></a><br>2.  <a href="#发布到github上面"><span class="nav-number">2.</span> <span class="nav-text">发布到github上面</span></a><br><br>        1.  <a href="#创建repository"><span class="nav-number">2.1.</span> <span class="nav-text">创建repository</span></a><br>    2.  <a href="#将本地博客部署上去"><span class="nav-number">2.2.</span> <span class="nav-text">将本地博客部署上去</span></a><br>3.  <a href="#发表一篇文章"><span class="nav-number">3.</span> <span class="nav-text">发表一篇文章</span></a><br>4.  <a href="#hexo主题及其配置"><span class="nav-number">4.</span> <span class="nav-text">hexo主题及其配置</span></a><br><br>        1.  <a href="#安装主题"><span class="nav-number">4.1.</span> <span class="nav-text">安装主题</span></a><br>    2.  <a href="#启用主题"><span class="nav-number">4.2.</span> <span class="nav-text">启用主题</span></a><br>    3.  <a href="#更新主题"><span class="nav-number">4.3.</span> <span class="nav-text">更新主题</span></a><br>    4.  <a href="#主题的-config-yml配置"><span class="nav-number">4.4.</span> <span class="nav-text">主题的_config.yml配置</span></a><br>    5.  <a href="#畅言评论"><span class="nav-number">4.5.</span> <span class="nav-text">畅言评论</span></a><br>5.  <a href="#添加网站的RSS订阅"><span class="nav-number">5.</span> <span class="nav-text">添加网站的RSS订阅</span></a><br><br>        1.  <a href="#安装hexo-generator-feed"><span class="nav-number">5.1.</span> <span class="nav-text">安装hexo-generator-feed</span></a><br>    2.  <a href="#配置根目录的-config-yml"><span class="nav-number">5.2.</span> <span class="nav-text">配置根目录的_config.yml</span></a><br>6.  <a href="#自定义分页"><span class="nav-number">6.</span> <span class="nav-text">自定义分页</span></a><br>7.  <a href="#绑定自己的域名"><span class="nav-number">7.</span> <span class="nav-text">绑定自己的域名</span></a><br>8.  <a href="#站内搜索"><span class="nav-number">8.</span> <span class="nav-text">站内搜索</span></a><br>9.  <a href="#algolia搜索"><span class="nav-number">9.</span> <span class="nav-text">algolia搜索</span></a><br>10.  <a href="#阅读次数统计"><span class="nav-number">10.</span> <span class="nav-text">阅读次数统计</span></a><br>11.  <a href="#多台电脑同时维护博客"><span class="nav-number">11.</span> <span class="nav-text">多台电脑同时维护博客</span></a><br><br>        1.  <a href="#思路"><span class="nav-number">11.1.</span> <span class="nav-text">思路</span></a><br>    2.  <a href="#具体步骤"><span class="nav-number">11.2.</span> <span class="nav-text">具体步骤</span></a><br>    3.  <a href="#使用方法"><span class="nav-number">11.3.</span> <span class="nav-text">使用方法</span></a><br>    4.  <a href="#其他说明"><span class="nav-number">11.4.</span> <span class="nav-text">其他说明</span></a><br>12.  <a href="#FAQ"><span class="nav-number">12.</span> <span class="nav-text">FAQ</span></a><br>13.  <a href="#参考"><span class="nav-number">13.</span> <span class="nav-text">参考</span></a></div><br><br>          </div><br>        </section><br>      <!--/noindex--><br><br>    </div><br>  </aside><br><br>      </div><br>    </main><br><br>    <footer id="footer" class="footer"><br>      <div class="footer-inner"><br>        <div class="copyright">&copy; 2015 - <span itemprop="copyrightYear">2018</span><br>  <span class="with-love"><br><br>  </span><br>  <span class="author" itemprop="copyrightHolder">熊能</span><br><br></div><br><br>  <div class="powered-by">由 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 强力驱动</div><br><br>  <span class="post-meta-divider">|</span><br><br>  <div class="theme-info">粤ICP备17025554号-1</div><br><br>      </div><br>    </footer><br><br>      <div class="back-to-top"><br><br>      </div><br><br>  </div><br><br><script type="text/javascript"><br>  if (Object.prototype.toString.call(window.Promise) !== ‘[object Function]’) {<br>    window.Promise = null;<br>  }<br></script><br><br>  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script><br><br>  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script><br><br>  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script><br><br>  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script><br><br>  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script><br><br>  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script><br><br>  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script><br><br>  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script><br><br>  <script type="text/javascript" src="/js/src/affix.js?v=5.1.3"></script><br><br>  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.3"></script><br><br>  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script><br><script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script><br><br>  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script><br><br>    <script type="text/javascript"><br>    (function(){<br>      var appid = ‘cytmsByHa’;<br>      var conf = ‘4ac23d4624531cd1605c8a00857e76e4’;<br>      var width = window.innerWidth || document.documentElement.clientWidth;<br>      if (width &lt; 960) {<br>      window.document.write(‘<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '">&lt;\/script&gt;’); } else { var loadJs=function(d,a){var c=document.getElementsByTagName(“head”)[0]||document.head||document.documentElement;var b=document.createElement(“script”);b.setAttribute(“type”,”text/javascript”);b.setAttribute(“charset”,”UTF-8”);b.setAttribute(“src”,d);if(typeof a===”function”){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e===”loaded”||e===”complete”){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs(“<a href="https://changyan.sohu.com/upload/changyan.js&quot;,function(){">https://changyan.sohu.com/upload/changyan.js&quot;,function(){</a><br>        window.changyan.api.config({appid:appid,conf:conf})});<br>      }<br>    })();<br>    </script><br>    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script><br><br>  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css"><br><br>  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script><br><br>  <script src="/js/src/algolia-search.js?v=5.1.3"></script><br><br>  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script><br>  <script>AV.initialize(“AXBtbvjnaMP2cE34U1CAjLqF-gzGzoHsz”, “6CKwM1armacelKCp8mh4StM4”);</script><br>  <script><br>    function showTime(Counter) {<br>      var query = new AV.Query(Counter);<br>      var entries = [];<br>      var $visitors = $(“.leancloud_visitors”);<br><br>      $visitors.each(function () {<br>        entries.push( $(this).attr(“id”).trim() );<br>      });<br><br>      query.containedIn(‘url’, entries);<br>      query.find()<br>        .done(function (results) {<br>          var COUNT_CONTAINER_REF = ‘.leancloud-visitors-count’;<br><br>          if (results.length === 0) {<br>            $visitors.find(COUNT_CONTAINER_REF).text(0);<br>            return;<br>          }<br><br>          for (var i = 0; i &lt; results.length; i++) {<br>            var item = results[i];<br>            var url = item.get(‘url’);<br>            var time = item.get(‘time’);<br>            var element = document.getElementById(url);<br><br>            $(element).find(COUNT_CONTAINER_REF).text(time);<br>          }<br>          for(var i = 0; i &lt; entries.length; i++) {<br>            var url = entries[i];<br>            var element = document.getElementById(url);<br>            var countSpan = $(element).find(COUNT_CONTAINER_REF);<br>            if( countSpan.text() == ‘’) {<br>              countSpan.text(0);<br>            }<br>          }<br>        })<br>        .fail(function (object, error) {<br>          console.log(“Error: “ + error.code + “ “ + error.message);<br>        });<br>    }<br><br>    function addCount(Counter) {<br>      var $visitors = $(“.leancloud_visitors”);<br>      var url = $visitors.attr(‘id’).trim();<br>      var title = $visitors.attr(‘data-flag-title’).trim();<br>      var query = new AV.Query(Counter);<br><br>      query.equalTo(“url”, url);<br>      query.find({<br>        success: function(results) {<br>          if (results.length &gt; 0) {<br>            var counter = results[0];<br>            counter.fetchWhenSave(true);<br>            counter.increment(“time”);<br>            counter.save(null, {<br>              success: function(counter) {<br>                var $element = $(document.getElementById(url));<br>                $element.find(‘.leancloud-visitors-count’).text(counter.get(‘time’));<br>              },<br>              error: function(counter, error) {<br>                console.log(‘Failed to save Visitor num, with error message: ‘ + error.message);<br>              }<br>            });<br>          } else {<br>            var newcounter = new Counter();<br>            /<em> Set ACL </em>/<br>            var acl = new AV.ACL();<br>            acl.setPublicReadAccess(true);<br>            acl.setPublicWriteAccess(true);<br>            newcounter.setACL(acl);<br>            /<em> End Set ACL </em>/<br>            newcounter.set(“title”, title);<br>            newcounter.set(“url”, url);<br>            newcounter.set(“time”, 1);<br>            newcounter.save(null, {<br>              success: function(newcounter) {<br>                var $element = $(document.getElementById(url));<br>                $element.find(‘.leancloud-visitors-count’).text(newcounter.get(‘time’));<br>              },<br>              error: function(newcounter, error) {<br>                console.log(‘Failed to create’);<br>              }<br>            });<br>          }<br>        },<br>        error: function(error) {<br>          console.log(‘Error:’ + error.code + “ “ + error.message);<br>        }<br>      });<br>    }<br><br>    $(function() {<br>      var Counter = AV.Object.extend(“Counter”);<br>      if ($(‘.leancloud_visitors’).length == 1) {<br>        addCount(Counter);<br>      } else if ($(‘.post-title-link’).length &gt; 1) {<br>        showTime(Counter);<br>      }<br>    });<br>  </script><br><br></body><br></html>
+<p>之后使用cnpm命令代替npm命令，或者你直接通过添加 npm 参数 alias 一个新命令:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">alias cnpm=&quot;npm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a> \</span><br><span class="line">–cache=$HOME/.npm/.cache/cnpm \</span><br><span class="line">–disturl=<a href="https://npm.taobao.org/dist" target="_blank" rel="noopener">https://npm.taobao.org/dist</a> \</span><br><span class="line">–userconfig=$HOME/.cnpmrc&quot;</span><br></pre></td></tr></table></figure>
+
+<p><a href="http://git-scm.com/download/win" target="_blank" rel="noopener">Git客户端</a>: 把本地的hexo内容提交到github上去</p>
+<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a><a href="#安装hexo" title="安装hexo"></a>安装hexo</h3><p>利用 npm 命令即可安装。打开窗口控制台，输入安装hexo命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo</span><br></pre></td></tr></table></figure>
+
+<h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a><a href="#初始化" title="初始化"></a>初始化</h3><p>安装完成后，在你喜爱的文件夹下（如D:\hexo），控制台执行以下指令，hexo会自动在目标文件夹建立网站所需要的所有文件。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+
+<p>安装依赖包：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install</span><br></pre></td></tr></table></figure>
+
+<p>一切准备就绪让我们试验下，在D:\hexo内执行以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p>然后用浏览器访问<a href="http://localhost:4000，" target="_blank" rel="noopener">http://localhost:4000，</a> 此时，你应该看到了一个漂亮的博客了，当然这个博客只是在本地的，别人是看不到的，hexo3.0使用的默认主题是landscape。</p>
+<h2 id="发布到github上面"><a href="#发布到github上面" class="headerlink" title="发布到github上面"></a><a href="#发布到github上面" title="发布到github上面"></a>发布到github上面</h2><p>首先你得有github账号，如果没有就去注册个，很简单的步骤。</p>
+<h3 id="创建repository"><a href="#创建repository" class="headerlink" title="创建repository"></a><a href="#创建repository" title="创建repository"></a>创建repository</h3><p>repository相当于一个仓库，用来放置你的代码文件。登陆进入Github，并进入个人页面，选择repositories，然后New一个repository。<br>创建时，只需要填写Repository name即可。格式必须为yourname.github.io，比如我的是yidao620c.github.io</p>
+<h3 id="将本地博客部署上去"><a href="#将本地博客部署上去" class="headerlink" title="将本地博客部署上去"></a><a href="#将本地博客部署上去" title="将本地博客部署上去"></a>将本地博客部署上去</h3><p>先修改D:\hexo下的_config.yml文件,记得一点，hexo的配置文件中任何’:’后面都是带一个空格的</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repository: <a href="https://github.com/yidao620c/yidao620c.github.io.git" target="_blank" rel="noopener">https://github.com/yidao620c/yidao620c.github.io.git</a></span><br><span class="line">    branch: master</span><br></pre></td></tr></table></figure>
+
+<p>我刚开始是部署到github上面，现在我部署到自己的腾讯云主机上面去了，<br>原理都一样，在腾讯云主机上面创建一个git服务即可。然后上面的<code>repository</code>改成自己的git服务器地址。</p>
+<p>如果你是第一次使用Github或者是已经使用过，但没有配置过SSH，则可能需要配置一下SSH。<br>在Git Bash输入以下指令（任意位置点击鼠标右键），检查是否已经存在了SSH keys。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -al ~/.ssh</span><br></pre></td></tr></table></figure>
+
+<p>如果不存在就没有关系，如果存在的话，直接删除.ssh文件夹里面所有文件</p>
+<p>输入以下指令（邮箱就是你注册Github时候的邮箱）后回车，出现提示让你输入的时候一直按回车：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">“<a href="mailto:yidao620@gmail.com" target="_blank" rel="noopener">yidao620@gmail.com</a>“</span></span><br></pre></td></tr></table></figure>
+
+<p>然后键入以下指令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">eval</span> <code>ssh-agent -s</code></span><br><span class="line">ssh-add</span><br></pre></td></tr></table></figure>
+
+<p>到了这一步，就可以添加SSH key到你的Github账户了。键入以下指令，拷贝Key（先拷贝了，等一下可以直接粘贴，不放心的在执行下面命令后，先黏贴在记事本上）：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">clip &lt; ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+
+<p>然后到Github里面，点击右上角的设置图标Settings,找到SSH keys,Ttile随便你命名，Key就黏贴上你刚才复制的key,然后点Add SSH key，最后会让你重新输入下gitHub的密码<br>最后还是测试一下吧，键入以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a></span><br></pre></td></tr></table></figure>
+
+<p>你可能会看到有警告，输入“yes”就好</p>
+<p>还要安装hexo-deployer-git这个模块:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git –save</span><br></pre></td></tr></table></figure>
+
+<p>以上就表示SSH配置好了，执行以下命令部署到Github上。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>提示输入gitHub的账号密码，就能访问你得博客网站了。我的是: yidao620c.github.io</p>
+<h2 id="发表一篇文章"><a href="#发表一篇文章" class="headerlink" title="发表一篇文章"></a><a href="#发表一篇文章" title="发表一篇文章"></a>发表一篇文章</h2><p>在你的D:\hexo目录下面，控制台执行命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">“Hello World”</span></span><br></pre></td></tr></table></figure>
+
+<p>会自动在D:\hexo\source_posts文件夹生成一个hello-world.md文件，用编辑器打开，在里面写文章。<br>记住hexo中写文章使用的是Markdown语法，自己去google下这个语法吧，很方便很强大。里面的初始内容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">title: Hello World #可以改成中文的，如“新文章”</span><br><span class="line">date: 2016-03-06 16:04:09 #发表日期，一般不改动</span><br><span class="line">categories: blog #文章文类</span><br><span class="line">tags: [文章, 测试] #文章标签，多于一项时用这种格式，只有一项时使用tags: blog</span><br><span class="line">—</span><br><span class="line">#这里是正文，用markdown写，你可以选择写一段显示在首页的简介后，加上</span><br><span class="line">&lt;!–more–&gt;，在&lt;!–more–&gt;之前的内容会显示在首页，之后的内容会被隐藏，当游客点击Read more才能看到。</span><br></pre></td></tr></table></figure>
+
+<p>写完文章后，你可以使用<code>hexo g</code>生成静态文件。<code>hexo s</code>在本地预览效果。<code>hexo d</code>同步到github</p>
+<h2 id="hexo主题及其配置"><a href="#hexo主题及其配置" class="headerlink" title="hexo主题及其配置"></a><a href="#hexo主题及其配置" title="hexo主题及其配置"></a>hexo主题及其配置</h2><p>如果你不喜欢默认主题，那么可以去hexo官网找更多的<a href="https://hexo.io/themes/" target="_blank" rel="noopener">主题</a>。<br>我这里选择NexT主题说明一下，这个是一个非常简洁的主题，我喜欢简单的东西。</p>
+<p>Next主题官网：<a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">http://theme-next.iissnan.com/</a></p>
+<h3 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a><a href="#安装主题" title="安装主题"></a>安装主题</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> your-hexo-site</span><br><span class="line">$ git <span class="built_in">clone</span> <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">https://github.com/iissnan/hexo-theme-next</a> themes/next</span><br></pre></td></tr></table></figure>
+
+<h3 id="启用主题"><a href="#启用主题" class="headerlink" title="启用主题"></a><a href="#启用主题" title="启用主题"></a>启用主题</h3><p>修改你的博客根目录下的config.yml配置文件中的theme属性，将其设置为next</p>
+<h3 id="更新主题"><a href="#更新主题" class="headerlink" title="更新主题"></a><a href="#更新主题" title="更新主题"></a>更新主题</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> themes/next</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure>
+
+<p>更新好后，本地启动起来效果</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server -g  <span class="comment">#生成加预览</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="主题的-config-yml配置"><a href="#主题的-config-yml配置" class="headerlink" title="主题的_config.yml配置"></a><a href="#主题的-config-yml配置" title="主题的_config.yml配置"></a>主题的_config.yml配置</h3><p>具体配置请直接参考<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">开始使用NexT主题</a>。<br>同时我对这个主题进行了很多的修改让它看上去更加符合自己的审美观，如果对我博客的主题感兴趣可以直接在我的github页面拉取即可。</p>
+<h3 id="畅言评论"><a href="#畅言评论" class="headerlink" title="畅言评论"></a><a href="#畅言评论" title="畅言评论"></a>畅言评论</h3><p>一开始我用了多说，后来多说关闭不能使用了。然后换到disqus，发现还是有不少问题，首先是https因为不少认证过的，在浏览器里面有警告。<br>另外匿名评论我在管理后台看不到，不知道什么原因。最后还是切换至国内的畅言评论。</p>
+<p>参考这篇 <a href="http://www.jianshu.com/p/5888bd91d070" target="_blank" rel="noopener">http://www.jianshu.com/p/5888bd91d070</a></p>
+<p>先申请畅言，并且通过审核。获取到畅言评论的<code>APP ID</code> 和<code>APP KEY</code>，复制下来。</p>
+<p>主题配置文件<code>_config.yml</code>中添加一个简单的配置即可：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># changyan</span><br><span class="line">changyan:</span><br><span class="line">  enable: true</span><br><span class="line">  appid: your_appid</span><br><span class="line">  appkey: your_appkey</span><br></pre></td></tr></table></figure>
+
+<p>安装畅言后遇到几个问题，打开页面控制台后一直报错误，页面循环计数，另外有评论的文章，在首页评论数永远是0，在文章里面计数正常，<br>虽然不影响使用，但是看着真是不舒服。必须解决，参考了一篇文章（后面贴了链接）解决方案。</p>
+<p>找到<code>next/layout/_third-party/comments/changyan.swig:1~4行</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% if theme.changyan.enable and theme.changyan.appid and theme.changyan.appkey %&#125;</span><br><span class="line">  &#123;% if is_home() %&#125;</span><br><span class="line">    &lt;script id=&quot;cy_cmt_num&quot; src=&quot;<a href="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=&#123;&#123;theme.changyan.appid&#125;&#125;&quot;&gt;&lt;/script" target="_blank" rel="noopener">https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=&#123;&#123;theme.changyan.appid&#125;&#125;&quot;&gt;&lt;/script</a>&gt;</span><br><span class="line">  &#123;% else %&#125;</span><br><span class="line">    …省略</span><br></pre></td></tr></table></figure>
+
+<p>只需要将</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% else %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>改成</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% elseif page.comments %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>然后再找到<code>next/layout/_mavro/post.swig:175～178行</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;&#123;&#123; url_for(post.path) &#125;&#125;#SOHUCS&quot; itemprop=&quot;discussionUrl&quot;&gt;</span><br><span class="line">                 &lt;span id=&quot;url::&#123;&#123; post.permalink &#125;&#125;&quot; class=&quot;cy_cmt_count&quot; data-xid=&quot;&#123;&#123; post.path &#125;&#125;&quot; itemprop=&quot;commentsCount&quot; &gt;&lt;/span&gt;</span><br><span class="line">               &lt;/a&gt;</span><br></pre></td></tr></table></figure>
+
+<p>只需要将<code>post.permalink</code>这个值包一层encodeURI方法，如下修改：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;span id=&quot;url::&#123;&#123; encodeURI(post.permalink) &#125;&#125;&quot; class=&quot;cy_cmt_count&quot; data-xid=&quot;&#123;&#123; post.path &#125;&#125;&quot; itemprop=&quot;commentsCount&quot; &gt;&lt;/span&gt;</span><br></pre></td></tr></table></figure>
+
+<p>另外如果部署在自己服务器上面的话，你可以在带www的文章下评论完，然后去不带www的文章下看看，评论已经不存在，我做了nginx 301重定向解决。</p>
+<h2 id="添加网站的RSS订阅"><a href="#添加网站的RSS订阅" class="headerlink" title="添加网站的RSS订阅"></a><a href="#添加网站的RSS订阅" title="添加网站的RSS订阅"></a>添加网站的RSS订阅</h2><h3 id="安装hexo-generator-feed"><a href="#安装hexo-generator-feed" class="headerlink" title="安装hexo-generator-feed"></a><a href="#安装hexo-generator-feed" title="安装hexo-generator-feed"></a>安装hexo-generator-feed</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install hexo-generator-feed –save</span><br></pre></td></tr></table></figure>
+
+<p>安装完后，会在node_modules目录下生成hexo-generator-feed目录</p>
+<h3 id="配置根目录的-config-yml"><a href="#配置根目录的-config-yml" class="headerlink" title="配置根目录的_config.yml"></a><a href="#配置根目录的-config-yml" title="配置根目录的_config.yml"></a>配置根目录的_config.yml</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: <a href="http://hexo.io/plugins/" target="_blank" rel="noopener">http://hexo.io/plugins/</a></span><br><span class="line">#RSS订阅</span><br><span class="line">plugin:</span><br><span class="line">- hexo-generator-feed</span><br><span class="line">#Feed Atom</span><br><span class="line">feed:</span><br><span class="line">  type: atom</span><br><span class="line">  path: atom.xml</span><br><span class="line">  limit: 20</span><br><span class="line">  hub:</span><br></pre></td></tr></table></figure>
+
+<p>其中，feed是可选项，可配可不配！然后根据各个主题的说明添加一个RSS订阅链接即可</p>
+<h2 id="自定义分页"><a href="#自定义分页" class="headerlink" title="自定义分页"></a><a href="#自定义分页" title="自定义分页"></a>自定义分页</h2><p>安装三个插件：归档，标签，分类。然后将每个分页显示文章数都变大点</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-archive –save</span><br><span class="line">npm install hexo-generator-tag –save</span><br><span class="line">npm install hexo-generator-category –save</span><br></pre></td></tr></table></figure>
+
+<p>三者各自的配置：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">archive_generator:</span><br><span class="line">  per_page: 100</span><br><span class="line">  yearly: true</span><br><span class="line">  monthly: true</span><br><span class="line">  daily: false</span><br><span class="line">tag_generator:</span><br><span class="line">  per_page: 100</span><br><span class="line">category_generator:</span><br><span class="line">  per_page: 100</span><br></pre></td></tr></table></figure>
+
+<h2 id="绑定自己的域名"><a href="#绑定自己的域名" class="headerlink" title="绑定自己的域名"></a><a href="#绑定自己的域名" title="绑定自己的域名"></a>绑定自己的域名</h2><p>Github Page绑定自己域名，在source/目录下面新建<code>CNAME</code>文件，里面写入你自己的域名比如</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><a href="http://www.pycoding.com" target="_blank" rel="noopener">www.pycoding.com</a></span><br></pre></td></tr></table></figure>
+
+<p>去自己的域名运营商处添加CNAME类型的DNS记录:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">CNAME: @        =&gt;  yidao620c.github.io</span><br><span class="line">CNAME: www      =&gt;  yidao620c.github.io</span><br></pre></td></tr></table></figure>
+
+<p>如果是DNSPod，那么后面多加个点</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">@，CNAME，cmback.github.io.</span><br><span class="line">www，CNAME，cmback.github.io.</span><br></pre></td></tr></table></figure>
+
+<h2 id="站内搜索"><a href="#站内搜索" class="headerlink" title="站内搜索"></a><a href="#站内搜索" title="站内搜索"></a>站内搜索</h2><p>最简单是直接开启<code>Local Search</code></p>
+<p>安装 <code>hexo-generator-searchdb</code>，在站点的根目录下执行以下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install hexo-generator-searchdb –save</span><br></pre></td></tr></table></figure>
+
+<p>全局配置文件_config.yml中定义搜索页面：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br></pre></td></tr></table></figure>
+
+<p>在NexT的_config.yml配置中开启这个本地搜索：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># Local search</span><br><span class="line">local_search:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure>
+
+<h2 id="algolia搜索"><a href="#algolia搜索" class="headerlink" title="algolia搜索"></a><a href="#algolia搜索" title="algolia搜索"></a>algolia搜索</h2><p>使用一段时间的<code>Local Search</code>后发现还是不太好用，后来比较了一下Swiftype、 微搜索、Local Search 和 Algolia，<br>发现<code>algolia</code>比较好。安装<code>NexT</code>文档配置步骤如下：</p>
+<p>第一步，先注册Algolia，创建Index</p>
+<p>前往 <a href="https://www.algolia.com/" target="_blank" rel="noopener">Algolia 注册页面</a>，注册一个新账户。可以使用 GitHub 或者 Google 账户直接登录，<br>注册后的 14 天内拥有所有功能（包括收费类别的）。之后若未续费会自动降级为免费账户，免费账户总共有 10,000 条记录，<br>每月有 100,000 的可以操作数。注册完成后，创建一个新的 Index，这个 Index 将在后面使用。</p>
+<p>第二步，安装Algolia</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install –save hexo-algolia</span><br></pre></td></tr></table></figure>
+
+<p>第三步，获取Key，更新站点配置</p>
+<p>在 Algolia 服务站点上找到需要使用的一些配置的值，包括 <code>ApplicationID</code>、<code>Search-Only API Key</code>、<code>min API Key</code>。<br>注意，Admin API Key 需要保密保存。点击ALL API KEYS 找到新建INDEX对应的key， 编辑权限，<br>在弹出框中找到ACL选择勾选<code>Search</code>、<code>Add records</code>、<code>Delete records</code>、<code>List indices</code>、<code>Delete index</code>权限，点击update更新。</p>
+<p><img src="https://xnstatic-1253397658.file.myqcloud.com/hexo20.png" alt=""></p>
+<p>编辑站点配置文件，新增以下配置：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">algolia:</span><br><span class="line">  applicationID: &apos;IQUD4IM8MM&apos;</span><br><span class="line">  indexName: &apos;blogindex&apos;</span><br><span class="line">  chunkSize: 5000</span><br></pre></td></tr></table></figure>
+
+<p>替换除了 chunkSize 以外的其他字段为在 Algolia 获取到的值。</p>
+<p>第四步，更新Index</p>
+<p>当配置完成，新增一个环境变量，windwos和linux配置环境变量我就不讲了。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">HEXO_ALGOLIA_INDEXING_KEY=Search-Only API key</span><br></pre></td></tr></table></figure>
+
+<p>在站点根目录下执行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo algolia</span><br></pre></td></tr></table></figure>
+
+<p>来更新 Index，请注意观察命令的输出。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ hexo algolia</span><br><span class="line">INFO  [Algolia] Testing HEXO_ALGOLIA_INDEXING_KEY permissions.</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  [Algolia] Identified 152 pages and posts to index.</span><br><span class="line">INFO  [Algolia] Indexing chunk 1 of 4 (50 items each)</span><br><span class="line">INFO  [Algolia] Indexing chunk 2 of 4 (50 items each)</span><br><span class="line">INFO  [Algolia] Indexing chunk 3 of 4 (50 items each)</span><br><span class="line">INFO  [Algolia] Indexing chunk 4 of 4 (50 items each)</span><br><span class="line">INFO  [Algolia] Indexing done.</span><br></pre></td></tr></table></figure>
+
+<p>注意，每次更新文章后记得执行<code>hexo algolia</code>更新索引哦。</p>
+<p>第五步，主题集成</p>
+<p>更改主题配置文件，找到 Algolia Search 配置部分：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># Algolia Search</span><br><span class="line">algolia_search:</span><br><span class="line">  enable: false</span><br><span class="line">  hits:</span><br><span class="line">    per_page: 10</span><br><span class="line">  labels:</span><br><span class="line">    input_placeholder: Search for Posts</span><br><span class="line">    hits_empty: &quot;We didn&apos;t find any results for the search: $&#123;query&#125;&quot;</span><br><span class="line">    hits_stats: &quot;$&#123;hits&#125; results found in $&#123;time&#125; ms&quot;</span><br></pre></td></tr></table></figure>
+
+<p>将 <code>enable</code> 改为 <code>true</code> 即可，根据需要你可以调整 <code>labels</code> 中的文本。</p>
+<h2 id="阅读次数统计"><a href="#阅读次数统计" class="headerlink" title="阅读次数统计"></a><a href="#阅读次数统计" title="阅读次数统计"></a>阅读次数统计</h2><p>使用LeanCloud为文章添加阅读次数统计，请参考文章<a href="https://notes.wanghao.work/2015-10-21-%E4%B8%BANexT%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E9%98%85%E8%AF%BB%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%8A%9F%E8%83%BD.html#%E9%85%8D%E7%BD%AELeanCloud" target="_blank" rel="noopener">为NexT主题添加文章阅读量统计功能</a></p>
+<h2 id="多台电脑同时维护博客"><a href="#多台电脑同时维护博客" class="headerlink" title="多台电脑同时维护博客"></a><a href="#多台电脑同时维护博客" title="多台电脑同时维护博客"></a>多台电脑同时维护博客</h2><p>之前利用了 Hexo + Github搭建了自己的博客网站，但问题来了：如何在多台电脑上对此博客进行维护？</p>
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a><a href="#思路" title="思路"></a>思路</h3><ul>
+<li>对于一个已创建的博客目录，其已通过hexo建立了public目录下的内容与远程仓库<a href="mailto:yidao620c@github.com" target="_blank" rel="noopener">yidao620c@github.com</a>的master分支的连接关系，通过hexo的hexo deploy命令即可保持更新；</li>
+<li>因此只需要在此仓库<a href="mailto:yidao620c@github.com" target="_blank" rel="noopener">yidao620c@github.com</a>上再创建一个分支如source，将其与hexo下其他文件如node_modules、themes、scaffolds等（即除了public目录及.gitignore包含的文件外）进行同步绑定。</li>
+<li>在不同的电脑下设置好hexo环境，通过hexo命令维护master分支，通过git命令维护source分支即可。</li>
+</ul>
+<h3 id="具体步骤"><a href="#具体步骤" class="headerlink" title="具体步骤"></a><a href="#具体步骤" title="具体步骤"></a>具体步骤</h3><p>（假定最初创建博客为A，其他另一个为B)</p>
+<p>1) 在A中的git_blog目录下，建立source分支：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ git branch <span class="built_in">source</span> // 创建<span class="built_in">source</span>分支</span><br><span class="line">$ git checkout <span class="built_in">source</span> // 切换到<span class="built_in">source</span>分支</span><br><span class="line">$ git remote -v //查看远程分支名字</span><br><span class="line"> // 我的内容为如下，说明已绑定</span><br><span class="line"> // origin  <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:yidao620c/yidao620c.github.com.git (fetch)</span><br><span class="line"> // origin    <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:yidao620c/yidao620c.github.com.git (push)</span><br><span class="line">修改.gitignore文件，添加<span class="string">“public/“</span>字段至其中。</span><br><span class="line">$ git push origin <span class="built_in">source</span> // 将当前git_blog下的内容push到Github上的远程仓库的<span class="built_in">source</span>分支（会自动创建）上</span><br></pre></td></tr></table></figure>
+
+<p>2) 在B中建立git_blog目录，安装npm，安装Hexo，添加SSH，然后在B中建立本地的source分支，并与远程的source分支进行了绑定。<br>git_blog下的yidao620c.github.com文件夹里保存了和远程source分支相同的内容。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> -b <span class="built_in">source</span> <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:yidao620c/yidao620c.github.com.git</span><br><span class="line">$ <span class="built_in">cd</span> yidao620c.github.com</span><br><span class="line">$ git branch -a</span><br><span class="line">$ git checkout -b <span class="built_in">source</span> origin/<span class="built_in">source</span></span><br><span class="line">$ cnpm install hexo</span><br><span class="line">$ cnpm install</span><br><span class="line">$ cnpm install hexo-deployer-git –save</span><br><span class="line">$ cnpm install hexo-renderer-jade –save</span><br><span class="line">$ cnpm install hexo-renderer-sass –save</span><br></pre></td></tr></table></figure>
+
+<p><strong>重要记录</strong></p>
+<p>千万别执行<code>hexo init</code>这个命令啊，同时<code>Next</code>主题的安装步骤还是需要的。</p>
+<p>另外hexo3.4.3版本好像生成toc的时候有点问题，我退回到3.3.9就正常。</p>
+<p>首先<code>package.json</code>改成绝对版本号：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">“name”</span>: <span class="string">“hexo-site”</span>,</span><br><span class="line">  <span class="attr">“version”</span>: <span class="string">“0.0.0”</span>,</span><br><span class="line">  <span class="attr">“private”</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">“hexo”</span>: &#123;</span><br><span class="line">    <span class="attr">“version”</span>: <span class="string">“3.3.9”</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">“dependencies”</span>: &#123;</span><br><span class="line">    <span class="attr">“hexo”</span>: <span class="string">“3.3.9”</span>,</span><br><span class="line">    <span class="attr">“hexo-algolia”</span>: <span class="string">“^1.2.3”</span>,</span><br><span class="line">    <span class="attr">“hexo-deployer-git”</span>: <span class="string">“^0.3.1”</span>,</span><br><span class="line">    <span class="attr">“hexo-generator-archive”</span>: <span class="string">“^0.1.5”</span>,</span><br><span class="line">    <span class="attr">“hexo-generator-category”</span>: <span class="string">“^0.1.3”</span>,</span><br><span class="line">    <span class="attr">“hexo-generator-feed”</span>: <span class="string">“^1.2.2”</span>,</span><br><span class="line">    <span class="attr">“hexo-generator-index”</span>: <span class="string">“^0.2.0”</span>,</span><br><span class="line">    <span class="attr">“hexo-generator-searchdb”</span>: <span class="string">“^1.0.8”</span>,</span><br><span class="line">    <span class="attr">“hexo-generator-tag”</span>: <span class="string">“^0.2.0”</span>,</span><br><span class="line">    <span class="attr">“hexo-renderer-ejs”</span>: <span class="string">“^0.3.0”</span>,</span><br><span class="line">    <span class="attr">“hexo-renderer-jade”</span>: <span class="string">“^0.4.1”</span>,</span><br><span class="line">    <span class="attr">“hexo-renderer-marked”</span>: <span class="string">“^0.3.0”</span>,</span><br><span class="line">    <span class="attr">“hexo-renderer-sass”</span>: <span class="string">“^0.3.2”</span>,</span><br><span class="line">    <span class="attr">“hexo-renderer-stylus”</span>: <span class="string">“^0.3.1”</span>,</span><br><span class="line">    <span class="attr">“hexo-server”</span>: <span class="string">“^0.2.0”</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>然后把hexo卸载了，重新安装指定版本，在另外一个目录执行：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cnpm uninstall hexo -g</span><br><span class="line">cnpm install <a href="mailto:hexo@3.3.9" target="_blank" rel="noopener">hexo@3.3.9</a> -g</span><br></pre></td></tr></table></figure>
+
+<p>然后再回到hexo目录执行：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install</span><br></pre></td></tr></table></figure>
+
+<h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a><a href="#使用方法" title="使用方法"></a>使用方法</h3><p>如果是新电脑，先把source分支clone下来：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> -b <span class="built_in">source</span> –single-branch <a href="https://github.com/yidao620c/yidao620c.github.io.git" target="_blank" rel="noopener">https://github.com/yidao620c/yidao620c.github.io.git</a></span><br></pre></td></tr></table></figure>
+
+<p>在任意一台mac操作，都需先切换并保持在source分支上。使用git命令管理source文件；使用hexo命令进行同步至远程master分支，无需处理本地master分支</p>
+<ol>
+<li>在A中使用Hexo的new、g、d方法添加、生成、部署新的博客，内容都会被同步自动放到Github的master分支上</li>
+<li>在A中使用git命令的<code>push origin source</code>同步source到远程source分支</li>
+<li>同样保证B的git当前在git_blog下的source分支下</li>
+</ol>
+<p>先使用：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull origin <span class="built_in">source</span></span><br></pre></td></tr></table></figure>
+
+<p>获得Github的source分支上的最新版本，再使用：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git add -u</span><br><span class="line">$ git commit -m <span class="string">“”</span></span><br><span class="line">$ git push origin <span class="built_in">source</span></span><br></pre></td></tr></table></figure>
+
+<p>将新内容提交至Github的source分支上，完成source管理。</p>
+<h3 id="其他说明"><a href="#其他说明" class="headerlink" title="其他说明"></a><a href="#其他说明" title="其他说明"></a>其他说明</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add -f xxx // 强制添加文件/文件夹为tracked状态</span><br><span class="line">git rm –cache xxx // 解除文件为tracked状态</span><br><span class="line">git rm -r –cache xxx // 解除文件夹为tracked状态</span><br></pre></td></tr></table></figure>
+
+<h2 id="FAQ"><a href="#FAQ" class="headerlink" title="FAQ"></a><a href="#FAQ" title="FAQ"></a>FAQ</h2><ul>
+<li>遇到有大括号的代码块，如果多行的不用管，如果单行的就单个反引号，并且在里面加raw标签，比如 <code></code>*   关闭hexo的将回车当换行做法是用正常的markdown两个回车当换行，在全局_config.yml中添加配置<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">marked:</span><br><span class="line">  gfm: true</span><br><span class="line">  breaks: false</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a><a href="#参考" title="参考"></a>参考</h2><ul>
+<li><a href="http://tengj.top/tags/hexo/" target="_blank" rel="noopener">hexo干货系列</a></li>
+<li><a href="https://www.haomwei.com/technology/maupassant-hexo.html" target="_blank" rel="noopener">大道至简——Hexo简洁主题推荐</a></li>
+<li><p><a href="http://www.chaixuhong.com/article/NEXT%E4%BD%BF%E7%94%A8%E7%95%85%E8%A8%80%E7%9A%84%E9%97%AE%E9%A2%98.html" target="_blank" rel="noopener">NEXT主题中使用畅言的坑</a></p>
+<p></p>
+<footer class="post-footer">
+
+<pre><code>&lt;div class=&quot;post-tags&quot;&gt;
+
+    [# hexo](/tags/hexo/)
+
+&lt;/div&gt;
+
+&lt;div class=&quot;post-nav&quot;&gt;
+  &lt;div class=&quot;post-nav-next post-nav-item&quot;&gt;
+
+      [
+         浅谈coroutine和gevent
+      ](/2016/01/02/python/gevent.html &quot;浅谈coroutine和gevent&quot;)
+
+  &lt;/div&gt;
+
+  &lt;span class=&quot;post-nav-divider&quot;&gt;&lt;/span&gt;
+
+  &lt;div class=&quot;post-nav-prev post-nav-item&quot;&gt;
+
+      [
+        SQLAlchemy入门 
+      ](/2016/03/07/python/sqlalchemy01.html &quot;SQLAlchemy入门&quot;)
+
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre><p></p></footer><br><p></p>
+<p></p>
+<div class="post-spread"><br><br></div><br>
+
+<pre><code>&lt;/div&gt;
+</code></pre><div class="comments" id="comments"><br>  <div id="SOHUCS"></div><br></div>
+
+<pre><code>&lt;/div&gt;
+</code></pre><div class="sidebar-toggle"><br><div class="sidebar-toggle-line-wrap"><br>  <span class="sidebar-toggle-line sidebar-toggle-line-first"></span><br>  <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span><br>  <span class="sidebar-toggle-line sidebar-toggle-line-last"></span><br></div><br></div>
+
+<aside id="sidebar" class="sidebar">
+
+<div class="sidebar-inner">
+</div></aside></li>
+<li><p>文章目录</p>
+</li>
+<li><p>站点概览</p>
+<p>  <section class="site-overview-wrap sidebar-panel"></section></p>
+<pre><code>&lt;div class=&quot;site-overview&quot;&gt;
+  &lt;div class=&quot;site-author motion-element&quot; itemprop=&quot;author&quot; itemscope itemtype=&quot;http://schema.org/Person&quot;&gt;
+
+      ![熊能](/uploads/avatar.png)
+</code></pre></li>
+</ul>
+<p>熊能</p>
+<p>这里要写啥我不是很清楚 →_→</p>
+<pre><code>&lt;/div&gt;
+
+&lt;nav class=&quot;site-state motion-element&quot;&gt;
+
+    &lt;div class=&quot;site-state-item site-state-posts&quot;&gt;
+
+      [
+
+        &lt;span class=&quot;site-state-item-count&quot;&gt;180&lt;/span&gt;
+        &lt;span class=&quot;site-state-item-name&quot;&gt;日志&lt;/span&gt;
+      ](/archives/)
+    &lt;/div&gt;
+
+    &lt;div class=&quot;site-state-item site-state-categories&quot;&gt;
+      [
+        &lt;span class=&quot;site-state-item-count&quot;&gt;17&lt;/span&gt;
+        &lt;span class=&quot;site-state-item-name&quot;&gt;分类&lt;/span&gt;
+      ](/categories/index.html)
+    &lt;/div&gt;
+
+    &lt;div class=&quot;site-state-item site-state-tags&quot;&gt;
+      [
+        &lt;span class=&quot;site-state-item-count&quot;&gt;87&lt;/span&gt;
+        &lt;span class=&quot;site-state-item-name&quot;&gt;标签&lt;/span&gt;
+      ](/tags/index.html)
+    &lt;/div&gt;
+
+&lt;/nav&gt;
+
+  &lt;div class=&quot;feed-link motion-element&quot;&gt;
+    [
+
+      RSS
+    ](/atom.xml)
+  &lt;/div&gt;
+
+&lt;div class=&quot;links-of-author motion-element&quot;&gt;
+
+      &lt;span class=&quot;links-of-author-item&quot;&gt;
+        [
+
+            GitHub](https://github.com/yidao620c &quot;GitHub&quot;)
+      &lt;/span&gt;
+
+      &lt;span class=&quot;links-of-author-item&quot;&gt;
+        [
+
+            微博](http://weibo.com/yidao620 &quot;微博&quot;)
+      &lt;/span&gt;
+
+&lt;/div&gt;
+
+  &lt;div class=&quot;links-of-blogroll motion-element links-of-blogroll-inline&quot;&gt;
+    &lt;div class=&quot;links-of-blogroll-title&quot;&gt;
+
+      Links
+    &lt;/div&gt;
+</code></pre><ul>
+<li><a href="https://coolshell.cn/" title="酷壳" target="_blank" rel="noopener">酷壳</a></li>
+<li><a href="http://www.infoq.com/cn/" title="InfoQ" target="_blank" rel="noopener">InfoQ</a></li>
+<li><a href="http://blog.jobbole.com/" title="伯乐在线" target="_blank" rel="noopener">伯乐在线</a></li>
+<li><p><a href="http://www.cnblogs.com/" title="博客园" target="_blank" rel="noopener">博客园</a></p>
+<pre><code>    &lt;/div&gt;
+
+&lt;/div&gt;
+</code></pre><p>  </p>
+  <!--noindex-->
+<pre><code>&lt;section class=&quot;post-toc-wrap motion-element sidebar-panel sidebar-panel-active&quot;&gt;
+  &lt;div class=&quot;post-toc&quot;&gt;
+
+      &lt;div class=&quot;post-toc-content&quot;&gt;
+</code></pre></li>
+</ul>
+<ol>
+<li><p><a href="#安装"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a></p>
+<pre><code>1.  [&lt;span class=&quot;nav-number&quot;&gt;1.1.&lt;/span&gt; &lt;span class=&quot;nav-text&quot;&gt;安装依赖软件&lt;/span&gt;](#安装依赖软件)
+</code></pre><ol>
+<li><a href="#换淘宝源"><span class="nav-number">1.2.</span> <span class="nav-text">换淘宝源</span></a></li>
+<li><a href="#安装hexo"><span class="nav-number">1.3.</span> <span class="nav-text">安装hexo</span></a></li>
+<li><a href="#初始化"><span class="nav-number">1.4.</span> <span class="nav-text">初始化</span></a></li>
+</ol>
+</li>
+<li><p><a href="#发布到github上面"><span class="nav-number">2.</span> <span class="nav-text">发布到github上面</span></a></p>
+<pre><code>1.  [&lt;span class=&quot;nav-number&quot;&gt;2.1.&lt;/span&gt; &lt;span class=&quot;nav-text&quot;&gt;创建repository&lt;/span&gt;](#创建repository)
+</code></pre><ol>
+<li><a href="#将本地博客部署上去"><span class="nav-number">2.2.</span> <span class="nav-text">将本地博客部署上去</span></a></li>
+</ol>
+</li>
+<li><a href="#发表一篇文章"><span class="nav-number">3.</span> <span class="nav-text">发表一篇文章</span></a></li>
+<li><p><a href="#hexo主题及其配置"><span class="nav-number">4.</span> <span class="nav-text">hexo主题及其配置</span></a></p>
+<pre><code>1.  [&lt;span class=&quot;nav-number&quot;&gt;4.1.&lt;/span&gt; &lt;span class=&quot;nav-text&quot;&gt;安装主题&lt;/span&gt;](#安装主题)
+</code></pre><ol>
+<li><a href="#启用主题"><span class="nav-number">4.2.</span> <span class="nav-text">启用主题</span></a></li>
+<li><a href="#更新主题"><span class="nav-number">4.3.</span> <span class="nav-text">更新主题</span></a></li>
+<li><a href="#主题的-config-yml配置"><span class="nav-number">4.4.</span> <span class="nav-text">主题的_config.yml配置</span></a></li>
+<li><a href="#畅言评论"><span class="nav-number">4.5.</span> <span class="nav-text">畅言评论</span></a></li>
+</ol>
+</li>
+<li><p><a href="#添加网站的RSS订阅"><span class="nav-number">5.</span> <span class="nav-text">添加网站的RSS订阅</span></a></p>
+<pre><code>1.  [&lt;span class=&quot;nav-number&quot;&gt;5.1.&lt;/span&gt; &lt;span class=&quot;nav-text&quot;&gt;安装hexo-generator-feed&lt;/span&gt;](#安装hexo-generator-feed)
+</code></pre><ol>
+<li><a href="#配置根目录的-config-yml"><span class="nav-number">5.2.</span> <span class="nav-text">配置根目录的_config.yml</span></a></li>
+</ol>
+</li>
+<li><a href="#自定义分页"><span class="nav-number">6.</span> <span class="nav-text">自定义分页</span></a></li>
+<li><a href="#绑定自己的域名"><span class="nav-number">7.</span> <span class="nav-text">绑定自己的域名</span></a></li>
+<li><a href="#站内搜索"><span class="nav-number">8.</span> <span class="nav-text">站内搜索</span></a></li>
+<li><a href="#algolia搜索"><span class="nav-number">9.</span> <span class="nav-text">algolia搜索</span></a></li>
+<li><a href="#阅读次数统计"><span class="nav-number">10.</span> <span class="nav-text">阅读次数统计</span></a></li>
+<li><p><a href="#多台电脑同时维护博客"><span class="nav-number">11.</span> <span class="nav-text">多台电脑同时维护博客</span></a></p>
+<ol>
+<li><a href="#思路"><span class="nav-number">11.1.</span> <span class="nav-text">思路</span></a><ol>
+<li><a href="#具体步骤"><span class="nav-number">11.2.</span> <span class="nav-text">具体步骤</span></a></li>
+<li><a href="#使用方法"><span class="nav-number">11.3.</span> <span class="nav-text">使用方法</span></a></li>
+<li><a href="#其他说明"><span class="nav-number">11.4.</span> <span class="nav-text">其他说明</span></a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a href="#FAQ"><span class="nav-number">12.</span> <span class="nav-text">FAQ</span></a></li>
+<li><p><a href="#参考"><span class="nav-number">13.</span> <span class="nav-text">参考</span></a></p>
+<pre><code>&lt;/div&gt;
+</code></pre><p>   </p>
+ <!--/noindex-->
+<p><br></p>
+<p> <br></p>
+<p><footer id="footer" class="footer"><br> <div class="footer-inner"><br>   <div class="copyright">&copy; 2015 - <span itemprop="copyrightYear">2018</span><br><span class="with-love"></span></div></div></footer></p>
+<p><br><span class="author" itemprop="copyrightHolder">熊能</span></p>
+</li>
+</ol>
+<p></p>
+  <div class="powered-by">由 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 强力驱动</div>
+
+<p>  <span class="post-meta-divider">|</span></p>
+  <div class="theme-info">粤ICP备17025554号-1</div>
+
+<pre><code>  &lt;/div&gt;
+&lt;/footer&gt;
+
+  &lt;div class=&quot;back-to-top&quot;&gt;
+
+  &lt;/div&gt;
+</code></pre><p>  </p>
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+<pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
+(function(){
+  var appid = &apos;cytmsByHa&apos;;
+  var conf = &apos;4ac23d4624531cd1605c8a00857e76e4&apos;;
+  var width = window.innerWidth || document.documentElement.clientWidth;
+  if (width &lt; 960) {
+  window.document.write(&apos;&lt;script id=&quot;changyan_mobile_js&quot; charset=&quot;utf-8&quot; type=&quot;text/javascript&quot; src=&quot;https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=&apos; + appid + &apos;&amp;conf=&apos; + conf + &apos;&quot;&gt;&lt;\/script&gt;&apos;); } else { var loadJs=function(d,a){var c=document.getElementsByTagName(&quot;head&quot;)[0]||document.head||document.documentElement;var b=document.createElement(&quot;script&quot;);b.setAttribute(&quot;type&quot;,&quot;text/javascript&quot;);b.setAttribute(&quot;charset&quot;,&quot;UTF-8&quot;);b.setAttribute(&quot;src&quot;,d);if(typeof a===&quot;function&quot;){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e===&quot;loaded&quot;||e===&quot;complete&quot;){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs(&quot;https://changyan.sohu.com/upload/changyan.js&quot;,function(){
+    window.changyan.api.config({appid:appid,conf:conf})});
+  }
+})();
+&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://assets.changyan.sohu.com/upload/plugins/plugins.count.js&quot;&gt;&lt;/script&gt;
+</code></pre>  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+
+  <script src="/js/src/algolia-search.js?v=5.1.3"></script>
+
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("AXBtbvjnaMP2cE34U1CAjLqF-gzGzoHsz", "6CKwM1armacelKCp8mh4StM4");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+<p><br></p>
+
           
         
       
